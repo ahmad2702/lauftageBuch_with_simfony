@@ -393,6 +393,9 @@
     <service id="App\Command\ResetDatabaseCommand" class="App\Command\ResetDatabaseCommand" public="false" autowire="true" autoconfigure="true">
       <tag name="console.command"/>
     </service>
+    <service id="App\Controller\Authentication_Login" class="App\Controller\Authentication_Login" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+    </service>
     <service id="App\Controller\DefaultController" class="App\Controller\DefaultController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
@@ -695,7 +698,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>O7d1drdxospZ8sD3hkwXIk</argument>
+      <argument>UTrZsh9WZY+XyBeE9-YgTF</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -705,7 +708,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>O7d1drdxospZ8sD3hkwXIk</argument>
+      <argument>UTrZsh9WZY+XyBeE9-YgTF</argument>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
@@ -1770,14 +1773,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -2940,12 +2935,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5a4392b80740e7.96086826</argument>
+      <argument>5a4398b4a5f575.18121263</argument>
       <argument type="service" id="logger" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5a4392b80740e7.96086826</argument>
+      <argument>5a4398b4a5f575.18121263</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -3412,6 +3407,8 @@
     </service>
     <service id="instanceof.Symfony\Component\Console\Command\Command.0.App\Command\ResetDatabaseCommand" class="App\Command\ResetDatabaseCommand" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Command\ResetDatabaseCommand" class="App\Command\ResetDatabaseCommand" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\Authentication_Login" class="App\Controller\Authentication_Login" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Controller\Authentication_Login" class="App\Controller\Authentication_Login" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\DefaultController" class="App\Controller\DefaultController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\DefaultController" class="App\Controller\DefaultController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\DetailsController" class="App\Controller\DetailsController" public="false" autowire="true" abstract="true"/>
@@ -3661,7 +3658,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>sui9zCWLS9</argument>
       <argument>0</argument>
-      <argument>O7d1drdxospZ8sD3hkwXIk</argument>
+      <argument>UTrZsh9WZY+XyBeE9-YgTF</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3669,7 +3666,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>Ks9mAFHT5H</argument>
       <argument>0</argument>
-      <argument>O7d1drdxospZ8sD3hkwXIk</argument>
+      <argument>UTrZsh9WZY+XyBeE9-YgTF</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3677,7 +3674,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>A4VWCoOuek</argument>
       <argument>0</argument>
-      <argument>O7d1drdxospZ8sD3hkwXIk</argument>
+      <argument>UTrZsh9WZY+XyBeE9-YgTF</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3685,7 +3682,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>GoAorix8t4</argument>
       <argument>0</argument>
-      <argument>O7d1drdxospZ8sD3hkwXIk</argument>
+      <argument>UTrZsh9WZY+XyBeE9-YgTF</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

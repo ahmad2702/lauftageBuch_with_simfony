@@ -15,6 +15,9 @@ class TrackerLine
      */
     private $id;
 
+    /** @ORM\Column(type="string") **/
+    private $username;
+
     /** @ORM\Column(type="date") **/
     private $day;
 
@@ -39,6 +42,14 @@ class TrackerLine
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUsername()
+    {
+        return $this->username;
     }
 
     /**
