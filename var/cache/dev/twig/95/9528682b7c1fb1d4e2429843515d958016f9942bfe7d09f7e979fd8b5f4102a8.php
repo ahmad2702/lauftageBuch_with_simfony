@@ -15,11 +15,11 @@ class __TwigTemplate_26d0929e78ed1f6e41bc6b5e26bfcc66d99c5097d75d7439bc519c782cf
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9fb9f51afbfd60a06173fa8d9400c9a298bda9fefe442651cec4e3b4075c10ba = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_9fb9f51afbfd60a06173fa8d9400c9a298bda9fefe442651cec4e3b4075c10ba->enter($__internal_9fb9f51afbfd60a06173fa8d9400c9a298bda9fefe442651cec4e3b4075c10ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/trace.html.twig"));
+        $__internal_9417768d57eee34948659ae5b44f105e2d033cd51a94e0a30e52e0fabb11cb37 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_9417768d57eee34948659ae5b44f105e2d033cd51a94e0a30e52e0fabb11cb37->enter($__internal_9417768d57eee34948659ae5b44f105e2d033cd51a94e0a30e52e0fabb11cb37_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/trace.html.twig"));
 
-        $__internal_a202f599483120385b9cc8fd77e479c7f33050bab991d6fe7df464eb90d611e2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a202f599483120385b9cc8fd77e479c7f33050bab991d6fe7df464eb90d611e2->enter($__internal_a202f599483120385b9cc8fd77e479c7f33050bab991d6fe7df464eb90d611e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/trace.html.twig"));
+        $__internal_7f1950a6346d269864127a5136eec1c0972d3382a571225747d5226d5c22db34 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7f1950a6346d269864127a5136eec1c0972d3382a571225747d5226d5c22db34->enter($__internal_7f1950a6346d269864127a5136eec1c0972d3382a571225747d5226d5c22db34_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/trace.html.twig"));
 
         // line 1
         echo "<div class=\"trace-line-header break-long-words ";
@@ -120,10 +120,10 @@ class __TwigTemplate_26d0929e78ed1f6e41bc6b5e26bfcc66d99c5097d75d7439bc519c782cf
 ";
         }
         
-        $__internal_9fb9f51afbfd60a06173fa8d9400c9a298bda9fefe442651cec4e3b4075c10ba->leave($__internal_9fb9f51afbfd60a06173fa8d9400c9a298bda9fefe442651cec4e3b4075c10ba_prof);
+        $__internal_9417768d57eee34948659ae5b44f105e2d033cd51a94e0a30e52e0fabb11cb37->leave($__internal_9417768d57eee34948659ae5b44f105e2d033cd51a94e0a30e52e0fabb11cb37_prof);
 
         
-        $__internal_a202f599483120385b9cc8fd77e479c7f33050bab991d6fe7df464eb90d611e2->leave($__internal_a202f599483120385b9cc8fd77e479c7f33050bab991d6fe7df464eb90d611e2_prof);
+        $__internal_7f1950a6346d269864127a5136eec1c0972d3382a571225747d5226d5c22db34->leave($__internal_7f1950a6346d269864127a5136eec1c0972d3382a571225747d5226d5c22db34_prof);
 
     }
 
