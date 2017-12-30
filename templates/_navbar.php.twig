@@ -17,7 +17,7 @@
         <ul class="nav navbar-nav">
             <li><a href="{{ path('start') }}">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                    Gesamt
+                    Startseite
                 </a>
             </li>
             <li><a href="{{ path('details_list') }}">
@@ -25,9 +25,14 @@
                     Detail
                 </a>
             </li>
-            <li><a href="add.php">
+            <li><a href="{{ path('login') }}">
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    ADD
+                    Profil
+                </a>
+            </li>
+            <li><a href="{{ path('login') }}">
+                    <span class="glyphicon" aria-hidden="true"></span>
+                    Login
                 </a>
             </li>
 

@@ -30,11 +30,6 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
 
-        // login
-        if ('/login' === $pathinfo) {
-            return array (  '_controller' => 'App\\Controller\\Authentication_Login::login',  '_route' => 'login',);
-        }
-
         // start
         if ('' === $trimmedPathinfo) {
             $ret = array (  '_controller' => 'App\\Controller\\DefaultController::index',  '_route' => 'start',);
@@ -48,6 +43,11 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         // details_list
         if ('/details' === $pathinfo) {
             return array (  '_controller' => 'App\\Controller\\DetailsController::details',  '_route' => 'details_list',);
+        }
+
+        // login
+        if ('/login' === $pathinfo) {
+            return array (  '_controller' => 'App\\Controller\\SecurityController::login',  '_route' => 'login',);
         }
 
         if (0 === strpos($pathinfo, '/_')) {

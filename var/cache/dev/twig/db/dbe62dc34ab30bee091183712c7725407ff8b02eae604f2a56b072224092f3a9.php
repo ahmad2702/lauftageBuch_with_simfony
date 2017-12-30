@@ -15,11 +15,11 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b286d448a178e729f1dfdd9f4ce86b744f94b2a31d69a0b70c5de69cf55159c4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b286d448a178e729f1dfdd9f4ce86b744f94b2a31d69a0b70c5de69cf55159c4->enter($__internal_b286d448a178e729f1dfdd9f4ce86b744f94b2a31d69a0b70c5de69cf55159c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199->enter($__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
-        $__internal_7f884cedbcf90961fd7523aae00fbb9241aef35c281c97cbc3fa794b20ba51ab = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7f884cedbcf90961fd7523aae00fbb9241aef35c281c97cbc3fa794b20ba51ab->enter($__internal_7f884cedbcf90961fd7523aae00fbb9241aef35c281c97cbc3fa794b20ba51ab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9->enter($__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
         // line 1
         echo "<div class=\"web-element\">
@@ -47,7 +47,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("start");
         echo "\">
                     <span class=\"glyphicon glyphicon-home\" aria-hidden=\"true\"></span>
-                    Gesamt
+                    Startseite
                 </a>
             </li>
             <li><a href=\"";
@@ -58,9 +58,20 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
                     Detail
                 </a>
             </li>
-            <li><a href=\"add.php\">
+            <li><a href=\"";
+        // line 28
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("login");
+        echo "\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
-                    ADD
+                    Profil
+                </a>
+            </li>
+            <li><a href=\"";
+        // line 33
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("login");
+        echo "\">
+                    <span class=\"glyphicon\" aria-hidden=\"true\"></span>
+                    Login
                 </a>
             </li>
 
@@ -70,10 +81,10 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
     </div>
 </div>";
         
-        $__internal_b286d448a178e729f1dfdd9f4ce86b744f94b2a31d69a0b70c5de69cf55159c4->leave($__internal_b286d448a178e729f1dfdd9f4ce86b744f94b2a31d69a0b70c5de69cf55159c4_prof);
+        $__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199->leave($__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199_prof);
 
         
-        $__internal_7f884cedbcf90961fd7523aae00fbb9241aef35c281c97cbc3fa794b20ba51ab->leave($__internal_7f884cedbcf90961fd7523aae00fbb9241aef35c281c97cbc3fa794b20ba51ab_prof);
+        $__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9->leave($__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9_prof);
 
     }
 
@@ -89,7 +100,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     public function getDebugInfo()
     {
-        return array (  55 => 23,  47 => 18,  37 => 11,  25 => 1,);
+        return array (  71 => 33,  63 => 28,  55 => 23,  47 => 18,  37 => 11,  25 => 1,);
     }
 
     public function getSourceContext()
@@ -113,7 +124,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
         <ul class=\"nav navbar-nav\">
             <li><a href=\"{{ path('start') }}\">
                     <span class=\"glyphicon glyphicon-home\" aria-hidden=\"true\"></span>
-                    Gesamt
+                    Startseite
                 </a>
             </li>
             <li><a href=\"{{ path('details_list') }}\">
@@ -121,9 +132,14 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
                     Detail
                 </a>
             </li>
-            <li><a href=\"add.php\">
+            <li><a href=\"{{ path('login') }}\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
-                    ADD
+                    Profil
+                </a>
+            </li>
+            <li><a href=\"{{ path('login') }}\">
+                    <span class=\"glyphicon\" aria-hidden=\"true\"></span>
+                    Login
                 </a>
             </li>
 
