@@ -45,9 +45,9 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'App\\Controller\\DetailsController::details',  '_route' => 'details_list',);
         }
 
-        // login
+        // security_login
         if ('/login' === $pathinfo) {
-            return array (  '_controller' => 'App\\Controller\\SecurityController::login',  '_route' => 'login',);
+            return array (  '_controller' => 'App\\Controller\\SecurityController::loginAction',  '_route' => 'security_login',);
         }
 
         if (0 === strpos($pathinfo, '/_')) {

@@ -21,29 +21,29 @@ class __TwigTemplate_01e60b03f92e595ab699787fddb186bd92413e95ffb181a151ac0e41f53
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f7ed58194f1099e9f680a7dbd45455cb8e7be37efe1ba666ecb4834da88e4e86 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f7ed58194f1099e9f680a7dbd45455cb8e7be37efe1ba666ecb4834da88e4e86->enter($__internal_f7ed58194f1099e9f680a7dbd45455cb8e7be37efe1ba666ecb4834da88e4e86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "authentications/login.php.twig"));
+        $__internal_8d1255e01e605eea67f638bb351be01eb5551129ae7f6b58d79a47f8300e1896 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8d1255e01e605eea67f638bb351be01eb5551129ae7f6b58d79a47f8300e1896->enter($__internal_8d1255e01e605eea67f638bb351be01eb5551129ae7f6b58d79a47f8300e1896_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "authentications/login.php.twig"));
 
-        $__internal_906aed1a6af29da1ea77418596dc69ec780bb1542cb2d237cf589de3173d05b3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_906aed1a6af29da1ea77418596dc69ec780bb1542cb2d237cf589de3173d05b3->enter($__internal_906aed1a6af29da1ea77418596dc69ec780bb1542cb2d237cf589de3173d05b3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "authentications/login.php.twig"));
+        $__internal_fb50a007f78a4080114c0eb8a905dac484ac0f81ddc8b89051de7b7c388fef76 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fb50a007f78a4080114c0eb8a905dac484ac0f81ddc8b89051de7b7c388fef76->enter($__internal_fb50a007f78a4080114c0eb8a905dac484ac0f81ddc8b89051de7b7c388fef76_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "authentications/login.php.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f7ed58194f1099e9f680a7dbd45455cb8e7be37efe1ba666ecb4834da88e4e86->leave($__internal_f7ed58194f1099e9f680a7dbd45455cb8e7be37efe1ba666ecb4834da88e4e86_prof);
+        $__internal_8d1255e01e605eea67f638bb351be01eb5551129ae7f6b58d79a47f8300e1896->leave($__internal_8d1255e01e605eea67f638bb351be01eb5551129ae7f6b58d79a47f8300e1896_prof);
 
         
-        $__internal_906aed1a6af29da1ea77418596dc69ec780bb1542cb2d237cf589de3173d05b3->leave($__internal_906aed1a6af29da1ea77418596dc69ec780bb1542cb2d237cf589de3173d05b3_prof);
+        $__internal_fb50a007f78a4080114c0eb8a905dac484ac0f81ddc8b89051de7b7c388fef76->leave($__internal_fb50a007f78a4080114c0eb8a905dac484ac0f81ddc8b89051de7b7c388fef76_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_ecafcf2968c872883c361d8755d863fb6389ed33eeeccd23ff3b380684304082 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ecafcf2968c872883c361d8755d863fb6389ed33eeeccd23ff3b380684304082->enter($__internal_ecafcf2968c872883c361d8755d863fb6389ed33eeeccd23ff3b380684304082_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_fe18f1e0482e6caef596da2d0b0ad51a2799e19397ae8a7f596e31ca5fa71a19 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fe18f1e0482e6caef596da2d0b0ad51a2799e19397ae8a7f596e31ca5fa71a19->enter($__internal_fe18f1e0482e6caef596da2d0b0ad51a2799e19397ae8a7f596e31ca5fa71a19_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_29ae3425973ebeea9c60360dbce223cb72b5f37d971759dbe600c0c821708a8c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_29ae3425973ebeea9c60360dbce223cb72b5f37d971759dbe600c0c821708a8c->enter($__internal_29ae3425973ebeea9c60360dbce223cb72b5f37d971759dbe600c0c821708a8c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_9a3713204226d46a9308e7973d94d0d256ca75c00e980d13c058cd43141a05e1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9a3713204226d46a9308e7973d94d0d256ca75c00e980d13c058cd43141a05e1->enter($__internal_9a3713204226d46a9308e7973d94d0d256ca75c00e980d13c058cd43141a05e1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "
@@ -51,43 +51,45 @@ class __TwigTemplate_01e60b03f92e595ab699787fddb186bd92413e95ffb181a151ac0e41f53
         <h1 align='center'>Login:</h1>
     </div>
 
-    <form class=\"form-horizontal\" action=\"\" method=\"post\">
-        <fieldset>
+    ";
+        // line 9
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new Twig_Error_Runtime('Variable "error" does not exist.', 9, $this->getSourceContext()); })())) {
+            // line 10
+            echo "        <div>";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new Twig_Error_Runtime('Variable "error" does not exist.', 10, $this->getSourceContext()); })()), "messageKey", array()), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new Twig_Error_Runtime('Variable "error" does not exist.', 10, $this->getSourceContext()); })()), "messageData", array()), "security"), "html", null, true);
+            echo "</div>
+    ";
+        }
+        // line 12
+        echo "
+    ";
+        // line 13
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 13, $this->getSourceContext()); })()), 'form_start');
+        echo "
 
-            <!-- Datum-->
-            <div class=\"form-group\">
-                <label class=\"col-md-3 control-label\" for=\"datum\">login:</label>
-                <div class=\"col-md-6\">
-                    <input id=\"name\" name=\"login\" class=\"form-control\" value=\"\">
-                    <span style=\"color: red;\"></span>
-                </div>
-            </div>
+        ";
+        // line 15
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 15, $this->getSourceContext()); })()), "_username", array()), 'row');
+        echo "
+        ";
+        // line 16
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 16, $this->getSourceContext()); })()), "_password", array()), 'row');
+        echo "
 
-            <!-- Strecke-->
-            <div class=\"form-group\">
-                <label class=\"col-md-3 control-label\" for=\"strecke\">passwort:</label>
-                <div class=\"col-md-6\">
-                    <input id=\"email\" name=\"password\" type=\"password\" class=\"form-control\" value=\"\">
-                    <span style=\"color: red;\"></span>
-                </div>
-            </div>
+        <button type=\"submit\" class=\"btn btn-success\">LOGIN <span class=\"fa fa-lock\"></span> </button>
 
-            <!-- Action -->
-            <div class=\"form-group\">
-                <div class=\"col-md-9 text-right\">
-                    <input type=\"submit\" class=\"btn btn-primary btn-lg\" name=\"addForm\" value=\"LOGIN\"></input>
-                </div>
-            </div>
+    ";
+        // line 20
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 20, $this->getSourceContext()); })()), 'form_end');
+        echo "
 
-        </fieldset>
-    </form>
 
 ";
         
-        $__internal_29ae3425973ebeea9c60360dbce223cb72b5f37d971759dbe600c0c821708a8c->leave($__internal_29ae3425973ebeea9c60360dbce223cb72b5f37d971759dbe600c0c821708a8c_prof);
+        $__internal_9a3713204226d46a9308e7973d94d0d256ca75c00e980d13c058cd43141a05e1->leave($__internal_9a3713204226d46a9308e7973d94d0d256ca75c00e980d13c058cd43141a05e1_prof);
 
         
-        $__internal_ecafcf2968c872883c361d8755d863fb6389ed33eeeccd23ff3b380684304082->leave($__internal_ecafcf2968c872883c361d8755d863fb6389ed33eeeccd23ff3b380684304082_prof);
+        $__internal_fe18f1e0482e6caef596da2d0b0ad51a2799e19397ae8a7f596e31ca5fa71a19->leave($__internal_fe18f1e0482e6caef596da2d0b0ad51a2799e19397ae8a7f596e31ca5fa71a19_prof);
 
     }
 
@@ -103,7 +105,7 @@ class __TwigTemplate_01e60b03f92e595ab699787fddb186bd92413e95ffb181a151ac0e41f53
 
     public function getDebugInfo()
     {
-        return array (  49 => 4,  40 => 3,  11 => 1,);
+        return array (  83 => 20,  76 => 16,  72 => 15,  67 => 13,  64 => 12,  58 => 10,  56 => 9,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     public function getSourceContext()
@@ -116,36 +118,19 @@ class __TwigTemplate_01e60b03f92e595ab699787fddb186bd92413e95ffb181a151ac0e41f53
         <h1 align='center'>Login:</h1>
     </div>
 
-    <form class=\"form-horizontal\" action=\"\" method=\"post\">
-        <fieldset>
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
 
-            <!-- Datum-->
-            <div class=\"form-group\">
-                <label class=\"col-md-3 control-label\" for=\"datum\">login:</label>
-                <div class=\"col-md-6\">
-                    <input id=\"name\" name=\"login\" class=\"form-control\" value=\"\">
-                    <span style=\"color: red;\"></span>
-                </div>
-            </div>
+    {{ form_start(form) }}
 
-            <!-- Strecke-->
-            <div class=\"form-group\">
-                <label class=\"col-md-3 control-label\" for=\"strecke\">passwort:</label>
-                <div class=\"col-md-6\">
-                    <input id=\"email\" name=\"password\" type=\"password\" class=\"form-control\" value=\"\">
-                    <span style=\"color: red;\"></span>
-                </div>
-            </div>
+        {{ form_row(form._username) }}
+        {{ form_row(form._password) }}
 
-            <!-- Action -->
-            <div class=\"form-group\">
-                <div class=\"col-md-9 text-right\">
-                    <input type=\"submit\" class=\"btn btn-primary btn-lg\" name=\"addForm\" value=\"LOGIN\"></input>
-                </div>
-            </div>
+        <button type=\"submit\" class=\"btn btn-success\">LOGIN <span class=\"fa fa-lock\"></span> </button>
 
-        </fieldset>
-    </form>
+    {{ form_end(form) }}
+
 
 {% endblock %}", "authentications/login.php.twig", "/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/templates/authentications/login.php.twig");
     }

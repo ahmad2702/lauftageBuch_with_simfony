@@ -15,11 +15,11 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199->enter($__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_c68945dc075c04171a28cdd29de8f50c3b02188c59208c394e03473e296c9e19 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c68945dc075c04171a28cdd29de8f50c3b02188c59208c394e03473e296c9e19->enter($__internal_c68945dc075c04171a28cdd29de8f50c3b02188c59208c394e03473e296c9e19_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
-        $__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9->enter($__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_294ebcc95b27d91a3ff7bc9408c2de4d6a7bbec563070cd8dc11c92aa7db604a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_294ebcc95b27d91a3ff7bc9408c2de4d6a7bbec563070cd8dc11c92aa7db604a->enter($__internal_294ebcc95b27d91a3ff7bc9408c2de4d6a7bbec563070cd8dc11c92aa7db604a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
         // line 1
         echo "<div class=\"web-element\">
@@ -60,7 +60,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
             </li>
             <li><a href=\"";
         // line 28
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("login");
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_login");
         echo "\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
                     Profil
@@ -68,7 +68,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
             </li>
             <li><a href=\"";
         // line 33
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("login");
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_login");
         echo "\">
                     <span class=\"glyphicon\" aria-hidden=\"true\"></span>
                     Login
@@ -81,10 +81,10 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
     </div>
 </div>";
         
-        $__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199->leave($__internal_d1bc90ad0fa0752a6dab5eb8c05596d76cc13369e0658bfb353b96aa77ce7199_prof);
+        $__internal_c68945dc075c04171a28cdd29de8f50c3b02188c59208c394e03473e296c9e19->leave($__internal_c68945dc075c04171a28cdd29de8f50c3b02188c59208c394e03473e296c9e19_prof);
 
         
-        $__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9->leave($__internal_7b13a39423b22f1b83ff0363b3d5b0dac424ad757f73440ddde4705c087071a9_prof);
+        $__internal_294ebcc95b27d91a3ff7bc9408c2de4d6a7bbec563070cd8dc11c92aa7db604a->leave($__internal_294ebcc95b27d91a3ff7bc9408c2de4d6a7bbec563070cd8dc11c92aa7db604a_prof);
 
     }
 
@@ -132,12 +132,12 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
                     Detail
                 </a>
             </li>
-            <li><a href=\"{{ path('login') }}\">
+            <li><a href=\"{{ path('security_login') }}\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
                     Profil
                 </a>
             </li>
-            <li><a href=\"{{ path('login') }}\">
+            <li><a href=\"{{ path('security_login') }}\">
                     <span class=\"glyphicon\" aria-hidden=\"true\"></span>
                     Login
                 </a>
