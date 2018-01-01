@@ -15,11 +15,11 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ab9757cf84e2be47cca1e768f19149f61e1b7aab7dcb249bb70ae6a8e7de0254 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ab9757cf84e2be47cca1e768f19149f61e1b7aab7dcb249bb70ae6a8e7de0254->enter($__internal_ab9757cf84e2be47cca1e768f19149f61e1b7aab7dcb249bb70ae6a8e7de0254_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd->enter($__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
-        $__internal_81ae31f81e1a51ca4acf23b5d22fc88ca1e7c29eb5c5260e64415b16881a44fc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_81ae31f81e1a51ca4acf23b5d22fc88ca1e7c29eb5c5260e64415b16881a44fc->enter($__internal_81ae31f81e1a51ca4acf23b5d22fc88ca1e7c29eb5c5260e64415b16881a44fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665->enter($__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
         // line 1
         echo "<div class=\"web-element\">
@@ -81,10 +81,10 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
     </div>
 </div>";
         
-        $__internal_ab9757cf84e2be47cca1e768f19149f61e1b7aab7dcb249bb70ae6a8e7de0254->leave($__internal_ab9757cf84e2be47cca1e768f19149f61e1b7aab7dcb249bb70ae6a8e7de0254_prof);
+        $__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd->leave($__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd_prof);
 
         
-        $__internal_81ae31f81e1a51ca4acf23b5d22fc88ca1e7c29eb5c5260e64415b16881a44fc->leave($__internal_81ae31f81e1a51ca4acf23b5d22fc88ca1e7c29eb5c5260e64415b16881a44fc_prof);
+        $__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665->leave($__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665_prof);
 
     }
 

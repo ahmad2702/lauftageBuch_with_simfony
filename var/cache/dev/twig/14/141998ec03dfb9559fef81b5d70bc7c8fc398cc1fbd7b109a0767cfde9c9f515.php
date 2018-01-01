@@ -15,20 +15,20 @@ class __TwigTemplate_79f19e8cc87b3e664eedd021d4dd5f044212bed6b977aa1209e834b7854
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_19ffcc62fc0b75b90622399db474c8751fc969cef2cb162abf2970ec444f8aba = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_19ffcc62fc0b75b90622399db474c8751fc969cef2cb162abf2970ec444f8aba->enter($__internal_19ffcc62fc0b75b90622399db474c8751fc969cef2cb162abf2970ec444f8aba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/chevron-right.svg"));
+        $__internal_650a7eaf6fe9cde01e0dde6842ce920297f0adc947ec1d4d364d96043fb42220 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_650a7eaf6fe9cde01e0dde6842ce920297f0adc947ec1d4d364d96043fb42220->enter($__internal_650a7eaf6fe9cde01e0dde6842ce920297f0adc947ec1d4d364d96043fb42220_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/chevron-right.svg"));
 
-        $__internal_83ebefdfb055abe564210e96aea178e50e3322204b4a1a416f7e320758a38211 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_83ebefdfb055abe564210e96aea178e50e3322204b4a1a416f7e320758a38211->enter($__internal_83ebefdfb055abe564210e96aea178e50e3322204b4a1a416f7e320758a38211_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/chevron-right.svg"));
+        $__internal_35faba477e88c3802a77df7eee6fadd1bf0bfe36648b07b6e0c66eb78df04acb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_35faba477e88c3802a77df7eee6fadd1bf0bfe36648b07b6e0c66eb78df04acb->enter($__internal_35faba477e88c3802a77df7eee6fadd1bf0bfe36648b07b6e0c66eb78df04acb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/chevron-right.svg"));
 
         // line 1
         echo "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#FFF\" d=\"M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z\"/></svg>
 ";
         
-        $__internal_19ffcc62fc0b75b90622399db474c8751fc969cef2cb162abf2970ec444f8aba->leave($__internal_19ffcc62fc0b75b90622399db474c8751fc969cef2cb162abf2970ec444f8aba_prof);
+        $__internal_650a7eaf6fe9cde01e0dde6842ce920297f0adc947ec1d4d364d96043fb42220->leave($__internal_650a7eaf6fe9cde01e0dde6842ce920297f0adc947ec1d4d364d96043fb42220_prof);
 
         
-        $__internal_83ebefdfb055abe564210e96aea178e50e3322204b4a1a416f7e320758a38211->leave($__internal_83ebefdfb055abe564210e96aea178e50e3322204b4a1a416f7e320758a38211_prof);
+        $__internal_35faba477e88c3802a77df7eee6fadd1bf0bfe36648b07b6e0c66eb78df04acb->leave($__internal_35faba477e88c3802a77df7eee6fadd1bf0bfe36648b07b6e0c66eb78df04acb_prof);
 
     }
 
@@ -45,6 +45,6 @@ class __TwigTemplate_79f19e8cc87b3e664eedd021d4dd5f044212bed6b977aa1209e834b7854
     public function getSourceContext()
     {
         return new Twig_Source("<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#FFF\" d=\"M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z\"/></svg>
-", "@Twig/images/chevron-right.svg", "/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
+", "@Twig/images/chevron-right.svg", "/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
     }
 }
