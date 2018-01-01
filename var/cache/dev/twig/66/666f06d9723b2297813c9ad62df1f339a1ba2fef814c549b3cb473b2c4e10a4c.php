@@ -15,20 +15,20 @@ class __TwigTemplate_51beb08c2bd7da893d5632c7b5dce6a0d25bc1ab62b7a13585a3e34c9df
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ff71947d243eb9d817afe329290283f6469d76178b47930579a9b06e0f73f2c8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ff71947d243eb9d817afe329290283f6469d76178b47930579a9b06e0f73f2c8->enter($__internal_ff71947d243eb9d817afe329290283f6469d76178b47930579a9b06e0f73f2c8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square.svg"));
+        $__internal_614f2c2a4dd128e8ee41ab82c9dbdb784cc29e29eb0434794ad0f38bbde1f927 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_614f2c2a4dd128e8ee41ab82c9dbdb784cc29e29eb0434794ad0f38bbde1f927->enter($__internal_614f2c2a4dd128e8ee41ab82c9dbdb784cc29e29eb0434794ad0f38bbde1f927_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square.svg"));
 
-        $__internal_ce9375fe756df3d401eb5519cff3c8448e449ba36749f9f68ecb0a7039d2f5b8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ce9375fe756df3d401eb5519cff3c8448e449ba36749f9f68ecb0a7039d2f5b8->enter($__internal_ce9375fe756df3d401eb5519cff3c8448e449ba36749f9f68ecb0a7039d2f5b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square.svg"));
+        $__internal_b742b4e71d255e38ed888caedb7cf9941b6c51089344518fbafd649b23abab68 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b742b4e71d255e38ed888caedb7cf9941b6c51089344518fbafd649b23abab68->enter($__internal_b742b4e71d255e38ed888caedb7cf9941b6c51089344518fbafd649b23abab68_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square.svg"));
 
         // line 1
         echo "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1408 960V832q0-26-19-45t-45-19H448q-26 0-45 19t-19 45v128q0 26 19 45t45 19h896q26 0 45-19t19-45zm256-544v960q0 119-84.5 203.5T1376 1664H416q-119 0-203.5-84.5T128 1376V416q0-119 84.5-203.5T416 128h960q119 0 203.5 84.5T1664 416z\"/></svg>
 ";
         
-        $__internal_ff71947d243eb9d817afe329290283f6469d76178b47930579a9b06e0f73f2c8->leave($__internal_ff71947d243eb9d817afe329290283f6469d76178b47930579a9b06e0f73f2c8_prof);
+        $__internal_614f2c2a4dd128e8ee41ab82c9dbdb784cc29e29eb0434794ad0f38bbde1f927->leave($__internal_614f2c2a4dd128e8ee41ab82c9dbdb784cc29e29eb0434794ad0f38bbde1f927_prof);
 
         
-        $__internal_ce9375fe756df3d401eb5519cff3c8448e449ba36749f9f68ecb0a7039d2f5b8->leave($__internal_ce9375fe756df3d401eb5519cff3c8448e449ba36749f9f68ecb0a7039d2f5b8_prof);
+        $__internal_b742b4e71d255e38ed888caedb7cf9941b6c51089344518fbafd649b23abab68->leave($__internal_b742b4e71d255e38ed888caedb7cf9941b6c51089344518fbafd649b23abab68_prof);
 
     }
 
@@ -45,6 +45,6 @@ class __TwigTemplate_51beb08c2bd7da893d5632c7b5dce6a0d25bc1ab62b7a13585a3e34c9df
     public function getSourceContext()
     {
         return new Twig_Source("<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1408 960V832q0-26-19-45t-45-19H448q-26 0-45 19t-19 45v128q0 26 19 45t45 19h896q26 0 45-19t19-45zm256-544v960q0 119-84.5 203.5T1376 1664H416q-119 0-203.5-84.5T128 1376V416q0-119 84.5-203.5T416 128h960q119 0 203.5 84.5T1664 416z\"/></svg>
-", "@Twig/images/icon-minus-square.svg", "/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/vendor/symfony/twig-bundle/Resources/views/images/icon-minus-square.svg");
+", "@Twig/images/icon-minus-square.svg", "/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/vendor/symfony/twig-bundle/Resources/views/images/icon-minus-square.svg");
     }
 }

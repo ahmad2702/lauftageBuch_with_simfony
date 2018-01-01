@@ -9,6 +9,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 //use Symfony\Component\Routing\Annotation\Route;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use App\Entity\User;
+
 
 use App\Form\LoginForm;
 
@@ -19,9 +24,7 @@ class SecurityController extends Controller
      * @Route("/login", name="security_login")
      *
      */
-    public function loginAction() {
-
-        $authenticationUtils = $this->get('security.authentication_utils');
+    public function loginAction(Request $request, AuthenticationUtils $authenticationUtils) {
 
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
