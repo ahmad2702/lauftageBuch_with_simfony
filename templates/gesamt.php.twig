@@ -21,8 +21,8 @@
             <div class="trackerLine">
 
                 <div class="trackerDatum1">
-                    <a href="/profile/username">
-                        username - {{ user.getUsername() }}
+                    <a href="{{ path('profile', { name : user.getUsername() }) }}">
+                        {{ user.getUsername() }}
                     </a>
                 </div>
 

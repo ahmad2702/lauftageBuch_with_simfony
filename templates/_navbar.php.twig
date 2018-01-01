@@ -20,16 +20,11 @@
                     Startseite
                 </a>
             </li>
-            <li><a href="{{ path('details_list') }}">
-                    <span class="glyphicon" aria-hidden="true"></span>
-                    Detail
-                </a>
-            </li>
 
 
 
         {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-            <li><a href="{{ path('security_login') }}">
+            <li><a href="{{ path('profile', { name : app.user.username }) }}">
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                     Profil ( {{ app.user.username }} )
                 </a>

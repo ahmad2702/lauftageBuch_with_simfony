@@ -45,9 +45,9 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'App\\Controller\\DefaultController::indexa',  '_route' => 'starta',);
         }
 
-        // details_list
-        if ('/details' === $pathinfo) {
-            return array (  '_controller' => 'App\\Controller\\DetailsController::details',  '_route' => 'details_list',);
+        // profile
+        if (0 === strpos($pathinfo, '/profile-') && preg_match('#^/profile\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'profile')), array (  '_controller' => 'App\\Controller\\ProfileController::profile',));
         }
 
         // security_login
