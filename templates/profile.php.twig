@@ -14,6 +14,12 @@
 
     {% else %}
 
+        <div style="width: 100%; height: 50px; color: blue; text-align: center;">
+            Anzahl der Lauftage: {{ anzahl }} <br>
+            Gesamttage seit dem ersten Lauftag bis heute: {{ ( (now | date('U')) - (first.getDay() | date('U')) )/86400 }} <br>
+            Gesamte bisher gelaufene Strecke: {{ first.getDay() }}  - {{ now | date }}
+        </div>
+
         {% set gesamtK=0 %}
         {% set gesamtZ=0 %}
 

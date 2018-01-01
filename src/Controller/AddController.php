@@ -68,7 +68,18 @@ class AddController extends Controller
 
         }else{
             $all = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => $name], ['day' => 'DESC']);
-            return ['lines' => $all, 'profileName' => $name, 'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit];
+
+            $last= $all[0];
+            $first = $all[sizeof($all)-1];
+
+            $now = strtotime(date('Y-m-d').' 00:00:00');
+
+            return [
+                    'lines' => $all, 'profileName' => $name, 'first'=> $first, 'last' => $last,
+                    'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
+
+                    'anzahl'=> sizeof($all), 'now' => $now
+                ];
         }
 
 
@@ -91,6 +102,9 @@ class AddController extends Controller
         return $this->redirect('/profile-'.$name);
 
     }
+
+
+
 
 
 

@@ -717,7 +717,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>Q0Xic0UD2K9M6xax4R8VLh</argument>
+      <argument>AXUGCjFxlHveR9JPxqfMXp</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -727,7 +727,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>Q0Xic0UD2K9M6xax4R8VLh</argument>
+      <argument>AXUGCjFxlHveR9JPxqfMXp</argument>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
@@ -3122,12 +3122,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5a4abc0f6255a4.43677222</argument>
+      <argument>5a4ac60be75040.74922676</argument>
       <argument type="service" id="logger" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5a4abc0f6255a4.43677222</argument>
+      <argument>5a4ac60be75040.74922676</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -3887,7 +3887,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>lNgaIewC+g</argument>
       <argument>0</argument>
-      <argument>Q0Xic0UD2K9M6xax4R8VLh</argument>
+      <argument>AXUGCjFxlHveR9JPxqfMXp</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3895,7 +3895,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>CMLAaRm6Ec</argument>
       <argument>0</argument>
-      <argument>Q0Xic0UD2K9M6xax4R8VLh</argument>
+      <argument>AXUGCjFxlHveR9JPxqfMXp</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3903,7 +3903,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>fAr3UAwB0-</argument>
       <argument>0</argument>
-      <argument>Q0Xic0UD2K9M6xax4R8VLh</argument>
+      <argument>AXUGCjFxlHveR9JPxqfMXp</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3911,7 +3911,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>SOnCYCYR3G</argument>
       <argument>0</argument>
-      <argument>Q0Xic0UD2K9M6xax4R8VLh</argument>
+      <argument>AXUGCjFxlHveR9JPxqfMXp</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
