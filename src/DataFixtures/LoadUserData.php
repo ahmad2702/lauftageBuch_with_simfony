@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\User;
+use App\Entity\TrackerLine;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -20,12 +21,52 @@ class LoadUserData extends Fixture
     }
 
     public function load(ObjectManager $manager) {
+
+        // User Accounts
         $user1 = new User();
-        $user1->setUsername('admin');
-        $user1->setPassword($this->encoder->encodePassword($user1, '0000'));
+        $user1->setUsername('alex');
+        $user1->setPassword($this->encoder->encodePassword($user1, '1111'));
         $manager->persist($user1);
 
+
+        $user2 = new User();
+        $user2->setUsername('jan');
+        $user2->setPassword($this->encoder->encodePassword($user2, '1111'));
+        $manager->persist($user2);
+
+
+        $user3 = new User();
+        $user3->setUsername('tim');
+        $user3->setPassword($this->encoder->encodePassword($user3, '1111'));
+        $manager->persist($user3);
+
+
+
+        // user data
+        $eintrag1 = new TrackerLine('alex', new \DateTime('2017-11-11'), 111, 111);
+        $manager->persist($eintrag1);
+
+        $eintrag2 = new TrackerLine('alex', new \DateTime('2017-11-12'), 222, 222);
+        $manager->persist($eintrag2);
+
+        $eintrag3 = new TrackerLine('jan', new \DateTime('2017-11-13'), 333, 333);
+        $manager->persist($eintrag3);
+
+        $eintrag4 = new TrackerLine('jan', new \DateTime('2017-11-14'), 444, 444);
+        $manager->persist($eintrag4);
+
+        $eintrag5 = new TrackerLine('tim', new \DateTime('2017-11-15'), 555, 555);
+        $manager->persist($eintrag5);
+
+        $eintrag6 = new TrackerLine('tim', new \DateTime('2017-11-16'), 666, 666);
+        $manager->persist($eintrag6);
+
+
+
+
+
         $manager->flush();
+
     }
 
 
