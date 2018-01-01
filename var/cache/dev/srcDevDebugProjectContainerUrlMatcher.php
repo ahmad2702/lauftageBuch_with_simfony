@@ -30,14 +30,22 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
 
-        // add_newData
-        if (0 === strpos($pathinfo, '/profil-') && preg_match('#^/profil\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'add_newData')), array (  '_controller' => 'App\\Controller\\AddController::add',));
-        }
+        if (0 === strpos($pathinfo, '/profil')) {
+            // add_newData
+            if (0 === strpos($pathinfo, '/profil-') && preg_match('#^/profil\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'add_newData')), array (  '_controller' => 'App\\Controller\\AddController::add',));
+            }
 
-        // profile
-        if (0 === strpos($pathinfo, '/profile-') && preg_match('#^/profile\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'profile')), array (  '_controller' => 'App\\Controller\\ProfileController::profile',));
+            // remove_newData
+            if (0 === strpos($pathinfo, '/profiler-') && preg_match('#^/profiler\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'remove_newData')), array (  '_controller' => 'App\\Controller\\AddController::remove',));
+            }
+
+            // profile
+            if (0 === strpos($pathinfo, '/profile-') && preg_match('#^/profile\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'profile')), array (  '_controller' => 'App\\Controller\\ProfileController::profile',));
+            }
+
         }
 
         // start

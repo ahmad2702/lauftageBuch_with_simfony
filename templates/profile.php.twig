@@ -40,8 +40,8 @@
 
                 <div class="trackerRemove">
                     {% if is_granted('IS_AUTHENTICATED_FULLY') and profileName == app.user.username %}
-                        <form method="post" action="functions/remove_element.php">
-                            <input type="hidden" value="{{ i.getId() }}" name="id">
+                        <form method="post" action="{{ path('remove_newData', { name : app.user.username }) }}">
+                            <input type="hidden" value="{{ i.getId() }}" name="id_toRemove">
                             <input type="submit" value="löschen" name="removeForm">
                         </form>
                     {% else %}

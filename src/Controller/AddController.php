@@ -75,6 +75,22 @@ class AddController extends Controller
     }
 
 
+    /**
+     * @Route("profiler-{name}", name="remove_newData")
+     * @Template("profile.php.twig")
+     */
+    public function remove(EntityManagerInterface $doctrine, $name, Request $request, ObjectManager $manager) {
+
+        $id = $request->get('id_toRemove');
+
+        $findElement = $doctrine->getRepository('App:TrackerLine')->findOneBy(['id' => $id]);
+
+        $manager->remove($findElement);
+        $manager->flush();
+
+        return $this->redirect('/profile-'.$name);
+
+    }
 
 
 

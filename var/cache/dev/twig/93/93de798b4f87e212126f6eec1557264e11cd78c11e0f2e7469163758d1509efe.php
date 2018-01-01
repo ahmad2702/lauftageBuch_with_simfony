@@ -21,29 +21,29 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7fa784442fa93be621f0e834cdb82c063a9f15c96a7d07a9d53929ec96577072 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7fa784442fa93be621f0e834cdb82c063a9f15c96a7d07a9d53929ec96577072->enter($__internal_7fa784442fa93be621f0e834cdb82c063a9f15c96a7d07a9d53929ec96577072_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
+        $__internal_329e7e31f1f82ebfd5d9a2324ff198128bef9ac3e2ab8b8f3924a157d3fcb3a4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_329e7e31f1f82ebfd5d9a2324ff198128bef9ac3e2ab8b8f3924a157d3fcb3a4->enter($__internal_329e7e31f1f82ebfd5d9a2324ff198128bef9ac3e2ab8b8f3924a157d3fcb3a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
 
-        $__internal_a2e0063a3fc1bbac294062bc60236358f8c4cf3286ccdc1fe6ed93d3cf76441f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a2e0063a3fc1bbac294062bc60236358f8c4cf3286ccdc1fe6ed93d3cf76441f->enter($__internal_a2e0063a3fc1bbac294062bc60236358f8c4cf3286ccdc1fe6ed93d3cf76441f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
+        $__internal_06943895912757282d4c400652c5e74b0a1fca2f8de0631775c67854150ad874 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_06943895912757282d4c400652c5e74b0a1fca2f8de0631775c67854150ad874->enter($__internal_06943895912757282d4c400652c5e74b0a1fca2f8de0631775c67854150ad874_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7fa784442fa93be621f0e834cdb82c063a9f15c96a7d07a9d53929ec96577072->leave($__internal_7fa784442fa93be621f0e834cdb82c063a9f15c96a7d07a9d53929ec96577072_prof);
+        $__internal_329e7e31f1f82ebfd5d9a2324ff198128bef9ac3e2ab8b8f3924a157d3fcb3a4->leave($__internal_329e7e31f1f82ebfd5d9a2324ff198128bef9ac3e2ab8b8f3924a157d3fcb3a4_prof);
 
         
-        $__internal_a2e0063a3fc1bbac294062bc60236358f8c4cf3286ccdc1fe6ed93d3cf76441f->leave($__internal_a2e0063a3fc1bbac294062bc60236358f8c4cf3286ccdc1fe6ed93d3cf76441f_prof);
+        $__internal_06943895912757282d4c400652c5e74b0a1fca2f8de0631775c67854150ad874->leave($__internal_06943895912757282d4c400652c5e74b0a1fca2f8de0631775c67854150ad874_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_f0292f700c280062b44eaf0fadba0a9a3d9b631b46ab047431b2a638eff5366d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f0292f700c280062b44eaf0fadba0a9a3d9b631b46ab047431b2a638eff5366d->enter($__internal_f0292f700c280062b44eaf0fadba0a9a3d9b631b46ab047431b2a638eff5366d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_d967817730655594e18e258dcae896db6c84d79895c1e8ac18c03f6740338cf7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d967817730655594e18e258dcae896db6c84d79895c1e8ac18c03f6740338cf7->enter($__internal_d967817730655594e18e258dcae896db6c84d79895c1e8ac18c03f6740338cf7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_992ea763fffd4a111db822e770654888f31011484cd4d3347c869897c4e7dd02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_992ea763fffd4a111db822e770654888f31011484cd4d3347c869897c4e7dd02->enter($__internal_992ea763fffd4a111db822e770654888f31011484cd4d3347c869897c4e7dd02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_dd6bca64e5048acd8a6de60d69009e30b1a6f31d09be41335ed5afc2a9743e74 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dd6bca64e5048acd8a6de60d69009e30b1a6f31d09be41335ed5afc2a9743e74->enter($__internal_dd6bca64e5048acd8a6de60d69009e30b1a6f31d09be41335ed5afc2a9743e74_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "
@@ -124,11 +124,13 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
                 // line 42
                 if (($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("IS_AUTHENTICATED_FULLY") && ((isset($context["profileName"]) || array_key_exists("profileName", $context) ? $context["profileName"] : (function () { throw new Twig_Error_Runtime('Variable "profileName" does not exist.', 42, $this->getSourceContext()); })()) == twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 42, $this->getSourceContext()); })()), "user", array()), "username", array())))) {
                     // line 43
-                    echo "                        <form method=\"post\" action=\"functions/remove_element.php\">
+                    echo "                        <form method=\"post\" action=\"";
+                    echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("remove_newData", array("name" => twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 43, $this->getSourceContext()); })()), "user", array()), "username", array()))), "html", null, true);
+                    echo "\">
                             <input type=\"hidden\" value=\"";
                     // line 44
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["i"], "getId", array(), "method"), "html", null, true);
-                    echo "\" name=\"id\">
+                    echo "\" name=\"id_toRemove\">
                             <input type=\"submit\" value=\"löschen\" name=\"removeForm\">
                         </form>
                     ";
@@ -224,10 +226,10 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
 
 ";
         
-        $__internal_992ea763fffd4a111db822e770654888f31011484cd4d3347c869897c4e7dd02->leave($__internal_992ea763fffd4a111db822e770654888f31011484cd4d3347c869897c4e7dd02_prof);
+        $__internal_dd6bca64e5048acd8a6de60d69009e30b1a6f31d09be41335ed5afc2a9743e74->leave($__internal_dd6bca64e5048acd8a6de60d69009e30b1a6f31d09be41335ed5afc2a9743e74_prof);
 
         
-        $__internal_f0292f700c280062b44eaf0fadba0a9a3d9b631b46ab047431b2a638eff5366d->leave($__internal_f0292f700c280062b44eaf0fadba0a9a3d9b631b46ab047431b2a638eff5366d_prof);
+        $__internal_d967817730655594e18e258dcae896db6c84d79895c1e8ac18c03f6740338cf7->leave($__internal_d967817730655594e18e258dcae896db6c84d79895c1e8ac18c03f6740338cf7_prof);
 
     }
 
@@ -243,7 +245,7 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
 
     public function getDebugInfo()
     {
-        return array (  223 => 108,  203 => 91,  191 => 82,  179 => 73,  169 => 66,  162 => 61,  160 => 60,  155 => 57,  149 => 53,  141 => 50,  137 => 48,  130 => 44,  127 => 43,  125 => 42,  118 => 38,  113 => 35,  111 => 34,  107 => 33,  102 => 30,  100 => 29,  96 => 28,  89 => 24,  84 => 21,  80 => 20,  77 => 19,  74 => 18,  72 => 17,  69 => 16,  61 => 10,  59 => 9,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  225 => 108,  205 => 91,  193 => 82,  181 => 73,  171 => 66,  164 => 61,  162 => 60,  157 => 57,  151 => 53,  143 => 50,  139 => 48,  132 => 44,  127 => 43,  125 => 42,  118 => 38,  113 => 35,  111 => 34,  107 => 33,  102 => 30,  100 => 29,  96 => 28,  89 => 24,  84 => 21,  80 => 20,  77 => 19,  74 => 18,  72 => 17,  69 => 16,  61 => 10,  59 => 9,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     public function getSourceContext()
@@ -290,8 +292,8 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
 
                 <div class=\"trackerRemove\">
                     {% if is_granted('IS_AUTHENTICATED_FULLY') and profileName == app.user.username %}
-                        <form method=\"post\" action=\"functions/remove_element.php\">
-                            <input type=\"hidden\" value=\"{{ i.getId() }}\" name=\"id\">
+                        <form method=\"post\" action=\"{{ path('remove_newData', { name : app.user.username }) }}\">
+                            <input type=\"hidden\" value=\"{{ i.getId() }}\" name=\"id_toRemove\">
                             <input type=\"submit\" value=\"löschen\" name=\"removeForm\">
                         </form>
                     {% else %}
