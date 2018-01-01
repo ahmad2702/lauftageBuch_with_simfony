@@ -15,11 +15,11 @@ class __TwigTemplate_91eaf13d2faec5b3c15cc281acf213ba0cff6436fdd7469208bbabfd4ca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fce7d88aa2019a0c7d90a49fd47ef7f162a93ec275921dd1cc148c001494a221 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fce7d88aa2019a0c7d90a49fd47ef7f162a93ec275921dd1cc148c001494a221->enter($__internal_fce7d88aa2019a0c7d90a49fd47ef7f162a93ec275921dd1cc148c001494a221_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_footer.php.twig"));
+        $__internal_f925c2f0bc9300b0ce00052bd182cfa41a6cb3aa6851b20fca9d6a2ade035108 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f925c2f0bc9300b0ce00052bd182cfa41a6cb3aa6851b20fca9d6a2ade035108->enter($__internal_f925c2f0bc9300b0ce00052bd182cfa41a6cb3aa6851b20fca9d6a2ade035108_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_footer.php.twig"));
 
-        $__internal_c8c28368a90b9ed00569d05687717f10333ad3c805f6cb6249e9ae3e2cacbe3e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c8c28368a90b9ed00569d05687717f10333ad3c805f6cb6249e9ae3e2cacbe3e->enter($__internal_c8c28368a90b9ed00569d05687717f10333ad3c805f6cb6249e9ae3e2cacbe3e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_footer.php.twig"));
+        $__internal_910c3864b0cfbe3752219b538b738d73624d4995c28ba6a876a7325dc78e20c4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_910c3864b0cfbe3752219b538b738d73624d4995c28ba6a876a7325dc78e20c4->enter($__internal_910c3864b0cfbe3752219b538b738d73624d4995c28ba6a876a7325dc78e20c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_footer.php.twig"));
 
         // line 1
         echo "<p class=\"text-muted\">
@@ -27,10 +27,10 @@ class __TwigTemplate_91eaf13d2faec5b3c15cc281acf213ba0cff6436fdd7469208bbabfd4ca
     Lauftagebuch Un.Ltd.
 </p>";
         
-        $__internal_fce7d88aa2019a0c7d90a49fd47ef7f162a93ec275921dd1cc148c001494a221->leave($__internal_fce7d88aa2019a0c7d90a49fd47ef7f162a93ec275921dd1cc148c001494a221_prof);
+        $__internal_f925c2f0bc9300b0ce00052bd182cfa41a6cb3aa6851b20fca9d6a2ade035108->leave($__internal_f925c2f0bc9300b0ce00052bd182cfa41a6cb3aa6851b20fca9d6a2ade035108_prof);
 
         
-        $__internal_c8c28368a90b9ed00569d05687717f10333ad3c805f6cb6249e9ae3e2cacbe3e->leave($__internal_c8c28368a90b9ed00569d05687717f10333ad3c805f6cb6249e9ae3e2cacbe3e_prof);
+        $__internal_910c3864b0cfbe3752219b538b738d73624d4995c28ba6a876a7325dc78e20c4->leave($__internal_910c3864b0cfbe3752219b538b738d73624d4995c28ba6a876a7325dc78e20c4_prof);
 
     }
 
@@ -49,6 +49,6 @@ class __TwigTemplate_91eaf13d2faec5b3c15cc281acf213ba0cff6436fdd7469208bbabfd4ca
         return new Twig_Source("<p class=\"text-muted\">
     Copyright - 2017 <br>
     Lauftagebuch Un.Ltd.
-</p>", "_footer.php.twig", "/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_aufgabe/templates/_footer.php.twig");
+</p>", "_footer.php.twig", "/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/templates/_footer.php.twig");
     }
 }
