@@ -15,11 +15,11 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd->enter($__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a->enter($__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
-        $__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665->enter($__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933->enter($__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
         // line 1
         echo "<div class=\"web-element\">
@@ -58,22 +58,47 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
                     Detail
                 </a>
             </li>
-            <li><a href=\"";
-        // line 28
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_login");
-        echo "\">
+
+
+
+        ";
+        // line 31
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("IS_AUTHENTICATED_FULLY")) {
+            // line 32
+            echo "            <li><a href=\"";
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_login");
+            echo "\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
                     Profil
                 </a>
             </li>
+
             <li><a href=\"";
-        // line 33
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_login");
-        echo "\">
+            // line 38
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_logout");
+            echo "\">
+                    <span class=\"glyphicon\" aria-hidden=\"true\"></span>
+                    Logout
+                </a>
+            </li>
+
+        ";
+        } else {
+            // line 45
+            echo "
+            <li><a href=\"";
+            // line 46
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_login");
+            echo "\">
                     <span class=\"glyphicon\" aria-hidden=\"true\"></span>
                     Login
                 </a>
             </li>
+
+        ";
+        }
+        // line 53
+        echo "
 
 
 
@@ -81,10 +106,10 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
     </div>
 </div>";
         
-        $__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd->leave($__internal_3edc9aae2bca12d7f72616f5807a7e60688def483910cbbc38454449251b19fd_prof);
+        $__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a->leave($__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a_prof);
 
         
-        $__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665->leave($__internal_cbda10bd449f4868d467722aad94bad3826cf9d5393fddf68b0f8381dd9b4665_prof);
+        $__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933->leave($__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933_prof);
 
     }
 
@@ -100,7 +125,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     public function getDebugInfo()
     {
-        return array (  71 => 33,  63 => 28,  55 => 23,  47 => 18,  37 => 11,  25 => 1,);
+        return array (  101 => 53,  91 => 46,  88 => 45,  78 => 38,  68 => 32,  66 => 31,  55 => 23,  47 => 18,  37 => 11,  25 => 1,);
     }
 
     public function getSourceContext()
@@ -132,16 +157,32 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
                     Detail
                 </a>
             </li>
+
+
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
             <li><a href=\"{{ path('security_login') }}\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
                     Profil
                 </a>
             </li>
+
+            <li><a href=\"{{ path('security_logout') }}\">
+                    <span class=\"glyphicon\" aria-hidden=\"true\"></span>
+                    Logout
+                </a>
+            </li>
+
+        {% else %}
+
             <li><a href=\"{{ path('security_login') }}\">
                     <span class=\"glyphicon\" aria-hidden=\"true\"></span>
                     Login
                 </a>
             </li>
+
+        {% endif %}
+
 
 
 

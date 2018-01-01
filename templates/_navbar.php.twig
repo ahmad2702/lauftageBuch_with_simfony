@@ -25,16 +25,32 @@
                     Detail
                 </a>
             </li>
+
+
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
             <li><a href="{{ path('security_login') }}">
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                     Profil
                 </a>
             </li>
+
+            <li><a href="{{ path('security_logout') }}">
+                    <span class="glyphicon" aria-hidden="true"></span>
+                    Logout
+                </a>
+            </li>
+
+        {% else %}
+
             <li><a href="{{ path('security_login') }}">
                     <span class="glyphicon" aria-hidden="true"></span>
                     Login
                 </a>
             </li>
+
+        {% endif %}
+
 
 
 

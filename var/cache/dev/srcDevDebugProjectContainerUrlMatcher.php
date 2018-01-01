@@ -50,6 +50,11 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'App\\Controller\\SecurityController::loginAction',  '_route' => 'security_login',);
         }
 
+        // security_logout
+        if ('/logout' === $pathinfo) {
+            return array (  '_controller' => 'App\\Controller\\SecurityController::logoutAction',  '_route' => 'security_logout',);
+        }
+
         if (0 === strpos($pathinfo, '/_')) {
             // _twig_error_test
             if (0 === strpos($pathinfo, '/_error') && preg_match('#^/_error/(?P<code>\\d+)(?:\\.(?P<_format>[^/]++))?$#s', $pathinfo, $matches)) {
