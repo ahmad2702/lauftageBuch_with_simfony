@@ -16,23 +16,29 @@
     {% else %}
 
 
+        {% for user in lines %}
 
+            <div class="trackerLine">
 
-        <div class="trackerLine">
+                <div class="trackerDatum1">
+                    <a href="/profile/username">
+                        username - {{ user.getUsername() }}
+                    </a>
+                </div>
 
-            <div class="trackerDatum1">
-                <a href="/profile/username">username</a>
+                <div class="trackerStrecke">
+                    Anzahl der Lauftage
+                </div>
+
+                <div class="trackerZeit">
+                    Gesamte bisher gelaufene Strecke
+                </div>
+
             </div>
 
-            <div class="trackerStrecke">
-                Anzahl der Lauftage
-            </div>
+        {% endfor %}
 
-            <div class="trackerZeit">
-                Gesamte bisher gelaufene Strecke
-            </div>
 
-        </div>
 
     {% endif %}
 

@@ -21,29 +21,29 @@ class __TwigTemplate_278b1d1bfd3e623f4e1583fa46c39d8ff6c79112ac866ecb626f3b53d25
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4ba021049a03c95082b155f67e98695c4c8017aacc89747851d33b6a29077574 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4ba021049a03c95082b155f67e98695c4c8017aacc89747851d33b6a29077574->enter($__internal_4ba021049a03c95082b155f67e98695c4c8017aacc89747851d33b6a29077574_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gesamt.php.twig"));
+        $__internal_ad739d99edc827cdbe4b8ccef18e2b0c66347d2bd651e051b276c07ecd70a2ad = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ad739d99edc827cdbe4b8ccef18e2b0c66347d2bd651e051b276c07ecd70a2ad->enter($__internal_ad739d99edc827cdbe4b8ccef18e2b0c66347d2bd651e051b276c07ecd70a2ad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gesamt.php.twig"));
 
-        $__internal_b20b6b643821643f62a2f0adde5b9d076f200d611ddab05012a143424b7df4fb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b20b6b643821643f62a2f0adde5b9d076f200d611ddab05012a143424b7df4fb->enter($__internal_b20b6b643821643f62a2f0adde5b9d076f200d611ddab05012a143424b7df4fb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gesamt.php.twig"));
+        $__internal_d4e01bf20060be7eed600eb3b9fd4f96cceda8585cadde425faf3347415f386a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d4e01bf20060be7eed600eb3b9fd4f96cceda8585cadde425faf3347415f386a->enter($__internal_d4e01bf20060be7eed600eb3b9fd4f96cceda8585cadde425faf3347415f386a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "gesamt.php.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_4ba021049a03c95082b155f67e98695c4c8017aacc89747851d33b6a29077574->leave($__internal_4ba021049a03c95082b155f67e98695c4c8017aacc89747851d33b6a29077574_prof);
+        $__internal_ad739d99edc827cdbe4b8ccef18e2b0c66347d2bd651e051b276c07ecd70a2ad->leave($__internal_ad739d99edc827cdbe4b8ccef18e2b0c66347d2bd651e051b276c07ecd70a2ad_prof);
 
         
-        $__internal_b20b6b643821643f62a2f0adde5b9d076f200d611ddab05012a143424b7df4fb->leave($__internal_b20b6b643821643f62a2f0adde5b9d076f200d611ddab05012a143424b7df4fb_prof);
+        $__internal_d4e01bf20060be7eed600eb3b9fd4f96cceda8585cadde425faf3347415f386a->leave($__internal_d4e01bf20060be7eed600eb3b9fd4f96cceda8585cadde425faf3347415f386a_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_3d4fd133120f313047d45fcdaa8cdb4e6ae3a430918a003bbf72544da5852170 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3d4fd133120f313047d45fcdaa8cdb4e6ae3a430918a003bbf72544da5852170->enter($__internal_3d4fd133120f313047d45fcdaa8cdb4e6ae3a430918a003bbf72544da5852170_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_d2e20d96309166883c8ba2cd1b8cb45fef919a603a6f1fc423eab0c0a1f7a906 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d2e20d96309166883c8ba2cd1b8cb45fef919a603a6f1fc423eab0c0a1f7a906->enter($__internal_d2e20d96309166883c8ba2cd1b8cb45fef919a603a6f1fc423eab0c0a1f7a906_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_6b88690c9d64a02dfa1ac930ab6c68854c82523d6bed06926458c4d8e157f987 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6b88690c9d64a02dfa1ac930ab6c68854c82523d6bed06926458c4d8e157f987->enter($__internal_6b88690c9d64a02dfa1ac930ab6c68854c82523d6bed06926458c4d8e157f987_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_9db3297970b09c79082ec155862e12279de6daef1f5a92853288252f53b31c2b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9db3297970b09c79082ec155862e12279de6daef1f5a92853288252f53b31c2b->enter($__internal_9db3297970b09c79082ec155862e12279de6daef1f5a92853288252f53b31c2b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "
@@ -66,35 +66,54 @@ class __TwigTemplate_278b1d1bfd3e623f4e1583fa46c39d8ff6c79112ac866ecb626f3b53d25
             // line 17
             echo "
 
+        ";
+            // line 19
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["lines"]) || array_key_exists("lines", $context) ? $context["lines"] : (function () { throw new Twig_Error_Runtime('Variable "lines" does not exist.', 19, $this->getSourceContext()); })()));
+            foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
+                // line 20
+                echo "
+            <div class=\"trackerLine\">
 
+                <div class=\"trackerDatum1\">
+                    <a href=\"/profile/username\">
+                        username - ";
+                // line 25
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["user"], "getUsername", array(), "method"), "html", null, true);
+                echo "
+                    </a>
+                </div>
 
-        <div class=\"trackerLine\">
+                <div class=\"trackerStrecke\">
+                    Anzahl der Lauftage
+                </div>
 
-            <div class=\"trackerDatum1\">
-                <a href=\"/profile/username\">username</a>
+                <div class=\"trackerZeit\">
+                    Gesamte bisher gelaufene Strecke
+                </div>
+
             </div>
 
-            <div class=\"trackerStrecke\">
-                Anzahl der Lauftage
-            </div>
+        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 40
+            echo "
 
-            <div class=\"trackerZeit\">
-                Gesamte bisher gelaufene Strecke
-            </div>
-
-        </div>
 
     ";
         }
-        // line 38
+        // line 44
         echo "
 
 ";
         
-        $__internal_6b88690c9d64a02dfa1ac930ab6c68854c82523d6bed06926458c4d8e157f987->leave($__internal_6b88690c9d64a02dfa1ac930ab6c68854c82523d6bed06926458c4d8e157f987_prof);
+        $__internal_9db3297970b09c79082ec155862e12279de6daef1f5a92853288252f53b31c2b->leave($__internal_9db3297970b09c79082ec155862e12279de6daef1f5a92853288252f53b31c2b_prof);
 
         
-        $__internal_3d4fd133120f313047d45fcdaa8cdb4e6ae3a430918a003bbf72544da5852170->leave($__internal_3d4fd133120f313047d45fcdaa8cdb4e6ae3a430918a003bbf72544da5852170_prof);
+        $__internal_d2e20d96309166883c8ba2cd1b8cb45fef919a603a6f1fc423eab0c0a1f7a906->leave($__internal_d2e20d96309166883c8ba2cd1b8cb45fef919a603a6f1fc423eab0c0a1f7a906_prof);
 
     }
 
@@ -110,7 +129,7 @@ class __TwigTemplate_278b1d1bfd3e623f4e1583fa46c39d8ff6c79112ac866ecb626f3b53d25
 
     public function getDebugInfo()
     {
-        return array (  90 => 38,  67 => 17,  58 => 10,  56 => 9,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  109 => 44,  103 => 40,  82 => 25,  75 => 20,  71 => 19,  67 => 17,  58 => 10,  56 => 9,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     public function getSourceContext()
@@ -133,23 +152,29 @@ class __TwigTemplate_278b1d1bfd3e623f4e1583fa46c39d8ff6c79112ac866ecb626f3b53d25
     {% else %}
 
 
+        {% for user in lines %}
 
+            <div class=\"trackerLine\">
 
-        <div class=\"trackerLine\">
+                <div class=\"trackerDatum1\">
+                    <a href=\"/profile/username\">
+                        username - {{ user.getUsername() }}
+                    </a>
+                </div>
 
-            <div class=\"trackerDatum1\">
-                <a href=\"/profile/username\">username</a>
+                <div class=\"trackerStrecke\">
+                    Anzahl der Lauftage
+                </div>
+
+                <div class=\"trackerZeit\">
+                    Gesamte bisher gelaufene Strecke
+                </div>
+
             </div>
 
-            <div class=\"trackerStrecke\">
-                Anzahl der Lauftage
-            </div>
+        {% endfor %}
 
-            <div class=\"trackerZeit\">
-                Gesamte bisher gelaufene Strecke
-            </div>
 
-        </div>
 
     {% endif %}
 
