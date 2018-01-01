@@ -30,6 +30,16 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
 
+        // add_newData
+        if (0 === strpos($pathinfo, '/profil-') && preg_match('#^/profil\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'add_newData')), array (  '_controller' => 'App\\Controller\\AddController::add',));
+        }
+
+        // profile
+        if (0 === strpos($pathinfo, '/profile-') && preg_match('#^/profile\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'profile')), array (  '_controller' => 'App\\Controller\\ProfileController::profile',));
+        }
+
         // start
         if ('' === $trimmedPathinfo) {
             $ret = array (  '_controller' => 'App\\Controller\\DefaultController::index',  '_route' => 'start',);
@@ -43,11 +53,6 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         // starta
         if ('/a' === $pathinfo) {
             return array (  '_controller' => 'App\\Controller\\DefaultController::indexa',  '_route' => 'starta',);
-        }
-
-        // profile
-        if (0 === strpos($pathinfo, '/profile-') && preg_match('#^/profile\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'profile')), array (  '_controller' => 'App\\Controller\\ProfileController::profile',));
         }
 
         // security_login

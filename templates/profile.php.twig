@@ -10,7 +10,6 @@
 
         <div class="noLinesFound">
             Die Liste ist noch leer. <br>
-            Bitte oben auf ADD klicken!
         </div>
 
     {% else %}
@@ -40,10 +39,14 @@
                 </div>
 
                 <div class="trackerRemove">
-                    <form method="post" action="functions/remove_element.php">
-                        <input type="hidden" value="{{ i.getId() }}" name="id">
-                        <input type="submit" value="löschen" name="removeForm">
-                    </form>
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') and profileName == app.user.username %}
+                        <form method="post" action="functions/remove_element.php">
+                            <input type="hidden" value="{{ i.getId() }}" name="id">
+                            <input type="submit" value="löschen" name="removeForm">
+                        </form>
+                    {% else %}
+                        -
+                    {% endif %}
                 </div>
             </div>
         {% endfor %}
@@ -51,6 +54,57 @@
 
 
      {% endif %}
+
+
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') and profileName == app.user.username %}
+
+        <div class="page-header">
+
+        </div>
+
+        <form class="form-horizontal" action="{{ path('add_newData', { name : app.user.username }) }}" method="post">
+            <fieldset>
+
+                <!-- Datum-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="datum">DATUM:</label>
+                    <div class="col-md-6">
+                        <input id="name" name="datum" type="date" placeholder="JJJJ-MM-TT" class="form-control" value="{{ datum }}">
+                        <span style="color: red;"></span>
+                    </div>
+                </div>
+
+                <!-- Strecke-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="strecke">STRECKE (km):</label>
+                    <div class="col-md-6">
+                        <input id="email" name="strecke" type="text" placeholder="nn / nn.n" class="form-control" value="{{ strecke }}">
+                        <span style="color: red;"></span>
+                    </div>
+                </div>
+
+                <!-- Zeit-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="zeit">ZEIT:</label>
+                    <div class="col-md-6">
+                        <input id="email" name="zeit" type="text" placeholder="hh:mm:ss" class="form-control" value="{{ zeit }}">
+                        <span style="color: red;"></span>
+                    </div>
+                </div>
+
+
+                <!-- Action -->
+                <div class="form-group">
+                    <div class="col-md-9 text-right">
+                        <input type="submit" class="btn btn-primary btn-lg" name="addForm" value="ADD"></input>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    {% endif %}
 
 
 {% endblock %}
