@@ -15,43 +15,23 @@
 
     {% else %}
 
-        {% set gesamtK=0 %}
-        {% set gesamtZ=0 %}
-
-        {% for i in lines %}
-
-                    {% set gesamtK=gesamtK+i.getStrecke() %}
-
-                    {% set gesamtZ=gesamtZ+i.getZeit() %}
 
 
-        {% endfor %}
-
-
-        <div class="trennLinie"></div>
 
         <div class="trackerLine">
-            <div class="trackerDatum1">
-                Anzahl der Lauftage: {{ lines|length }} <br>
 
-                Gesamttage: {{ ((last.getDay() | date('U'))-(first.getDay() | date('U')))/86400 }}
+            <div class="trackerDatum1">
+                <a href="/profile/username">username</a>
             </div>
 
             <div class="trackerStrecke">
-                Insgesamt: {{ gesamtK }} km
+                Anzahl der Lauftage
             </div>
 
             <div class="trackerZeit">
-                Insgesamt: {{ gesamtZ }} s
+                Gesamte bisher gelaufene Strecke
             </div>
 
-            <div class="trackerSpeed">
-                -
-            </div>
-
-            <div class="trackerRemove">
-                -
-            </div>
         </div>
 
     {% endif %}

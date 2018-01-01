@@ -31,7 +31,7 @@
         {% if is_granted('IS_AUTHENTICATED_FULLY') %}
             <li><a href="{{ path('security_login') }}">
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    Profil
+                    Profil ( {{ app.user.username }} )
                 </a>
             </li>
 

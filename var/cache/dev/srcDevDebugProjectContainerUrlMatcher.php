@@ -40,6 +40,11 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $ret;
         }
 
+        // starta
+        if ('/a' === $pathinfo) {
+            return array (  '_controller' => 'App\\Controller\\DefaultController::indexa',  '_route' => 'starta',);
+        }
+
         // details_list
         if ('/details' === $pathinfo) {
             return array (  '_controller' => 'App\\Controller\\DetailsController::details',  '_route' => 'details_list',);

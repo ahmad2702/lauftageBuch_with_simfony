@@ -7,14 +7,35 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 
+
 class DefaultController extends Controller
 {
+
 
     /**
      * @Route("/", name="start")
      * @Template("gesamt.php.twig")
      */
     public function index(EntityManagerInterface $doctrine) {
+        $all = $doctrine->getRepository('App:TrackerLine')->findBy([], ['day' => 'ASC']);
+
+        $users = array(
+
+        );
+
+
+        return ['lines' => $all];
+    }
+
+
+
+
+
+    /**
+     * @Route("/a", name="starta")
+     * @Template("gesamt.php.twig")
+     */
+    public function indexa(EntityManagerInterface $doctrine) {
         $all = $doctrine->getRepository('App:TrackerLine')->findBy([], ['day' => 'ASC']);
 
         $first= $all[0];

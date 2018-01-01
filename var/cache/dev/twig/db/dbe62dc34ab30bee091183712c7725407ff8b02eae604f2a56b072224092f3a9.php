@@ -15,11 +15,11 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a->enter($__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_343dc10d2ebc5cc310464dae2f95da3eec8685719a4023be4a573b8eab2b5718 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_343dc10d2ebc5cc310464dae2f95da3eec8685719a4023be4a573b8eab2b5718->enter($__internal_343dc10d2ebc5cc310464dae2f95da3eec8685719a4023be4a573b8eab2b5718_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
-        $__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933->enter($__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
+        $__internal_70996189e89d53fb58dc704f904b49b3ae9694b87498cc5efc2463263f514679 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_70996189e89d53fb58dc704f904b49b3ae9694b87498cc5efc2463263f514679->enter($__internal_70996189e89d53fb58dc704f904b49b3ae9694b87498cc5efc2463263f514679_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "_navbar.php.twig"));
 
         // line 1
         echo "<div class=\"web-element\">
@@ -69,7 +69,10 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("security_login");
             echo "\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
-                    Profil
+                    Profil ( ";
+            // line 34
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 34, $this->getSourceContext()); })()), "user", array()), "username", array()), "html", null, true);
+            echo " )
                 </a>
             </li>
 
@@ -106,10 +109,10 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
     </div>
 </div>";
         
-        $__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a->leave($__internal_744133d22b226f1d04e0a4ca508dd438babd0f91f611eed2912f1eaabd008b1a_prof);
+        $__internal_343dc10d2ebc5cc310464dae2f95da3eec8685719a4023be4a573b8eab2b5718->leave($__internal_343dc10d2ebc5cc310464dae2f95da3eec8685719a4023be4a573b8eab2b5718_prof);
 
         
-        $__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933->leave($__internal_8b2fb3c90222509f1ba996605a1a6c5e30fb2e1aa72de4362ad313e0afbef933_prof);
+        $__internal_70996189e89d53fb58dc704f904b49b3ae9694b87498cc5efc2463263f514679->leave($__internal_70996189e89d53fb58dc704f904b49b3ae9694b87498cc5efc2463263f514679_prof);
 
     }
 
@@ -125,7 +128,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
 
     public function getDebugInfo()
     {
-        return array (  101 => 53,  91 => 46,  88 => 45,  78 => 38,  68 => 32,  66 => 31,  55 => 23,  47 => 18,  37 => 11,  25 => 1,);
+        return array (  104 => 53,  94 => 46,  91 => 45,  81 => 38,  74 => 34,  68 => 32,  66 => 31,  55 => 23,  47 => 18,  37 => 11,  25 => 1,);
     }
 
     public function getSourceContext()
@@ -163,7 +166,7 @@ class __TwigTemplate_a6ec5186ba4169081b944946669e975cac3d1f47be1b513c8a92ee336c3
         {% if is_granted('IS_AUTHENTICATED_FULLY') %}
             <li><a href=\"{{ path('security_login') }}\">
                     <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>
-                    Profil
+                    Profil ( {{ app.user.username }} )
                 </a>
             </li>
 
