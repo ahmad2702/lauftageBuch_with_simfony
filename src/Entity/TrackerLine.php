@@ -28,6 +28,22 @@ class TrackerLine
     private $zeit;
 
     /**
+     * TrackerLine constructor.
+     * @param $username
+     * @param $day
+     * @param $strecke
+     * @param $zeit
+     */
+    public function __construct($username, $day, $strecke, $zeit)
+    {
+        $this->username = $username;
+        $this->day = $day;
+        $this->strecke = $strecke;
+        $this->zeit = $zeit;
+    }
+
+
+    /**
      * @param mixed $username
      */
     public function setUsername($username)

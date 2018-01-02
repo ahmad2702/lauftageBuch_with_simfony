@@ -23,12 +23,13 @@ class DefaultController extends Controller
         $user_alex = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'alex']);
         $user_jan = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'jan']);
         $user_tim = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'tim']);
+        $user_michael = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'michael']);
 
         //$current_user = $this->getUser()->getUsername();
 
         return [
                 'lines' => $users,
-                'alex' => $user_alex, 'jan' => $user_jan, 'tim' => $user_tim,
+                'alex' => $user_alex, 'jan' => $user_jan, 'tim' => $user_tim, 'michael' => $user_michael,
 
                 //'current_user' => $current_user
             ];
