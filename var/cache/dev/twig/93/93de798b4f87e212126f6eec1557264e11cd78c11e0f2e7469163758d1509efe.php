@@ -21,29 +21,29 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e36ac4e9756dec87d1ddf1f6473b225ccc3d39a517fc7b684bb485cd434a7279 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e36ac4e9756dec87d1ddf1f6473b225ccc3d39a517fc7b684bb485cd434a7279->enter($__internal_e36ac4e9756dec87d1ddf1f6473b225ccc3d39a517fc7b684bb485cd434a7279_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
+        $__internal_f52b08f3fc36129fcc785d00db4360d27d5db2daade97e8651e7e65a299fe5b6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f52b08f3fc36129fcc785d00db4360d27d5db2daade97e8651e7e65a299fe5b6->enter($__internal_f52b08f3fc36129fcc785d00db4360d27d5db2daade97e8651e7e65a299fe5b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
 
-        $__internal_8a6f3bd7a3b1d4b8da18449bb3652185fa7102e52496ee45d730d2947ade62f0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8a6f3bd7a3b1d4b8da18449bb3652185fa7102e52496ee45d730d2947ade62f0->enter($__internal_8a6f3bd7a3b1d4b8da18449bb3652185fa7102e52496ee45d730d2947ade62f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
+        $__internal_4a61f821d733428512248271b099f35ddacaad9c0e25bc844d03660fb4f1479e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4a61f821d733428512248271b099f35ddacaad9c0e25bc844d03660fb4f1479e->enter($__internal_4a61f821d733428512248271b099f35ddacaad9c0e25bc844d03660fb4f1479e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "profile.php.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e36ac4e9756dec87d1ddf1f6473b225ccc3d39a517fc7b684bb485cd434a7279->leave($__internal_e36ac4e9756dec87d1ddf1f6473b225ccc3d39a517fc7b684bb485cd434a7279_prof);
+        $__internal_f52b08f3fc36129fcc785d00db4360d27d5db2daade97e8651e7e65a299fe5b6->leave($__internal_f52b08f3fc36129fcc785d00db4360d27d5db2daade97e8651e7e65a299fe5b6_prof);
 
         
-        $__internal_8a6f3bd7a3b1d4b8da18449bb3652185fa7102e52496ee45d730d2947ade62f0->leave($__internal_8a6f3bd7a3b1d4b8da18449bb3652185fa7102e52496ee45d730d2947ade62f0_prof);
+        $__internal_4a61f821d733428512248271b099f35ddacaad9c0e25bc844d03660fb4f1479e->leave($__internal_4a61f821d733428512248271b099f35ddacaad9c0e25bc844d03660fb4f1479e_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_c271e64a08bf45dd19543ae581f5ba9e7e690b49ef5760a4d6fa7735e75427b6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c271e64a08bf45dd19543ae581f5ba9e7e690b49ef5760a4d6fa7735e75427b6->enter($__internal_c271e64a08bf45dd19543ae581f5ba9e7e690b49ef5760a4d6fa7735e75427b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_2ce4d0eda58460973dbbe26be34b1cc1293c826bb504c4829dcd882f268c2058 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2ce4d0eda58460973dbbe26be34b1cc1293c826bb504c4829dcd882f268c2058->enter($__internal_2ce4d0eda58460973dbbe26be34b1cc1293c826bb504c4829dcd882f268c2058_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_dbd78f167349ce4e3ae0d959c753d70a9f8fcb7f65234ff6f4fd218ed3ce0bd1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dbd78f167349ce4e3ae0d959c753d70a9f8fcb7f65234ff6f4fd218ed3ce0bd1->enter($__internal_dbd78f167349ce4e3ae0d959c753d70a9f8fcb7f65234ff6f4fd218ed3ce0bd1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_31644fa4fc7a4d9dfc9c57ff3978208ddd342972a3cc2e11529c39bc728a2ff5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_31644fa4fc7a4d9dfc9c57ff3978208ddd342972a3cc2e11529c39bc728a2ff5->enter($__internal_31644fa4fc7a4d9dfc9c57ff3978208ddd342972a3cc2e11529c39bc728a2ff5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "
@@ -140,8 +140,8 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
                 <div class=\"trackerZeit\">
                     ";
                 // line 45
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["i"], "getZeit", array(), "method"), "html", null, true);
-                echo " s
+                echo twig_escape_filter($this->env, twig_round(twig_get_attribute($this->env, $this->getSourceContext(), $context["i"], "getZeit", array(), "method"), 2, "floor"), "html", null, true);
+                echo " min
                     ";
                 // line 46
                 $context["gesamtZ"] = ((isset($context["gesamtZ"]) || array_key_exists("gesamtZ", $context) ? $context["gesamtZ"] : (function () { throw new Twig_Error_Runtime('Variable "gesamtZ" does not exist.', 46, $this->getSourceContext()); })()) + twig_get_attribute($this->env, $this->getSourceContext(), $context["i"], "getZeit", array(), "method"));
@@ -152,7 +152,7 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
                     ";
                 // line 50
                 echo twig_escape_filter($this->env, twig_round(twig_get_attribute($this->env, $this->getSourceContext(), $context["i"], "getSpeed", array(), "method"), 1, "floor"), "html", null, true);
-                echo " m/s
+                echo " km/h
                 </div>
 
                 <div class=\"trackerRemove\">
@@ -216,7 +216,10 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
             // line 85
             echo twig_escape_filter($this->env, (isset($context["datum"]) || array_key_exists("datum", $context) ? $context["datum"] : (function () { throw new Twig_Error_Runtime('Variable "datum" does not exist.', 85, $this->getSourceContext()); })()), "html", null, true);
             echo "\">
-                        <span style=\"color: red;\"></span>
+                        <span style=\"color: red;\">";
+            // line 86
+            echo twig_escape_filter($this->env, (isset($context["error_datum"]) || array_key_exists("error_datum", $context) ? $context["error_datum"] : (function () { throw new Twig_Error_Runtime('Variable "error_datum" does not exist.', 86, $this->getSourceContext()); })()), "html", null, true);
+            echo "</span>
                     </div>
                 </div>
 
@@ -228,7 +231,10 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
             // line 94
             echo twig_escape_filter($this->env, (isset($context["strecke"]) || array_key_exists("strecke", $context) ? $context["strecke"] : (function () { throw new Twig_Error_Runtime('Variable "strecke" does not exist.', 94, $this->getSourceContext()); })()), "html", null, true);
             echo "\">
-                        <span style=\"color: red;\"></span>
+                        <span style=\"color: red;\">";
+            // line 95
+            echo twig_escape_filter($this->env, (isset($context["error_strecke"]) || array_key_exists("error_strecke", $context) ? $context["error_strecke"] : (function () { throw new Twig_Error_Runtime('Variable "error_strecke" does not exist.', 95, $this->getSourceContext()); })()), "html", null, true);
+            echo "</span>
                     </div>
                 </div>
 
@@ -240,7 +246,10 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
             // line 103
             echo twig_escape_filter($this->env, (isset($context["zeit"]) || array_key_exists("zeit", $context) ? $context["zeit"] : (function () { throw new Twig_Error_Runtime('Variable "zeit" does not exist.', 103, $this->getSourceContext()); })()), "html", null, true);
             echo "\">
-                        <span style=\"color: red;\"></span>
+                        <span style=\"color: red;\">";
+            // line 104
+            echo twig_escape_filter($this->env, (isset($context["error_zeit"]) || array_key_exists("error_zeit", $context) ? $context["error_zeit"] : (function () { throw new Twig_Error_Runtime('Variable "error_zeit" does not exist.', 104, $this->getSourceContext()); })()), "html", null, true);
+            echo "</span>
                     </div>
                 </div>
 
@@ -262,10 +271,10 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
 
 ";
         
-        $__internal_dbd78f167349ce4e3ae0d959c753d70a9f8fcb7f65234ff6f4fd218ed3ce0bd1->leave($__internal_dbd78f167349ce4e3ae0d959c753d70a9f8fcb7f65234ff6f4fd218ed3ce0bd1_prof);
+        $__internal_31644fa4fc7a4d9dfc9c57ff3978208ddd342972a3cc2e11529c39bc728a2ff5->leave($__internal_31644fa4fc7a4d9dfc9c57ff3978208ddd342972a3cc2e11529c39bc728a2ff5_prof);
 
         
-        $__internal_c271e64a08bf45dd19543ae581f5ba9e7e690b49ef5760a4d6fa7735e75427b6->leave($__internal_c271e64a08bf45dd19543ae581f5ba9e7e690b49ef5760a4d6fa7735e75427b6_prof);
+        $__internal_2ce4d0eda58460973dbbe26be34b1cc1293c826bb504c4829dcd882f268c2058->leave($__internal_2ce4d0eda58460973dbbe26be34b1cc1293c826bb504c4829dcd882f268c2058_prof);
 
     }
 
@@ -281,7 +290,7 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
 
     public function getDebugInfo()
     {
-        return array (  261 => 120,  241 => 103,  229 => 94,  217 => 85,  207 => 78,  200 => 73,  198 => 72,  193 => 69,  187 => 65,  179 => 62,  175 => 60,  168 => 56,  163 => 55,  161 => 54,  154 => 50,  149 => 47,  147 => 46,  143 => 45,  138 => 42,  136 => 41,  132 => 40,  125 => 36,  120 => 33,  116 => 32,  113 => 31,  110 => 30,  108 => 29,  102 => 26,  98 => 25,  94 => 24,  90 => 22,  84 => 21,  81 => 20,  77 => 19,  74 => 18,  72 => 17,  69 => 16,  61 => 10,  59 => 9,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  270 => 120,  251 => 104,  247 => 103,  236 => 95,  232 => 94,  221 => 86,  217 => 85,  207 => 78,  200 => 73,  198 => 72,  193 => 69,  187 => 65,  179 => 62,  175 => 60,  168 => 56,  163 => 55,  161 => 54,  154 => 50,  149 => 47,  147 => 46,  143 => 45,  138 => 42,  136 => 41,  132 => 40,  125 => 36,  120 => 33,  116 => 32,  113 => 31,  110 => 30,  108 => 29,  102 => 26,  98 => 25,  94 => 24,  90 => 22,  84 => 21,  81 => 20,  77 => 19,  74 => 18,  72 => 17,  69 => 16,  61 => 10,  59 => 9,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     public function getSourceContext()
@@ -330,12 +339,12 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
                 </div>
 
                 <div class=\"trackerZeit\">
-                    {{ i.getZeit() }} s
+                    {{ i.getZeit() | round(2, 'floor') }} min
                     {% set gesamtZ=gesamtZ+i.getZeit() %}
                 </div>
 
                 <div class=\"trackerSpeed\">
-                    {{ i.getSpeed() | round(1, 'floor') }} m/s
+                    {{ i.getSpeed() | round(1, 'floor') }} km/h
                 </div>
 
                 <div class=\"trackerRemove\">
@@ -371,7 +380,7 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
                     <label class=\"col-md-3 control-label\" for=\"datum\">DATUM:</label>
                     <div class=\"col-md-6\">
                         <input id=\"name\" name=\"datum\" type=\"date\" placeholder=\"JJJJ-MM-TT\" class=\"form-control\" value=\"{{ datum }}\">
-                        <span style=\"color: red;\"></span>
+                        <span style=\"color: red;\">{{ error_datum }}</span>
                     </div>
                 </div>
 
@@ -380,7 +389,7 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
                     <label class=\"col-md-3 control-label\" for=\"strecke\">STRECKE (km):</label>
                     <div class=\"col-md-6\">
                         <input id=\"email\" name=\"strecke\" type=\"text\" placeholder=\"nn / nn.n\" class=\"form-control\" value=\"{{ strecke }}\">
-                        <span style=\"color: red;\"></span>
+                        <span style=\"color: red;\">{{ error_strecke }}</span>
                     </div>
                 </div>
 
@@ -389,7 +398,7 @@ class __TwigTemplate_5d38ba0e1625edc5774d894ccc325643afd5cd25c1dbc90ac379d31cfcb
                     <label class=\"col-md-3 control-label\" for=\"zeit\">ZEIT:</label>
                     <div class=\"col-md-6\">
                         <input id=\"email\" name=\"zeit\" type=\"text\" placeholder=\"hh:mm:ss\" class=\"form-control\" value=\"{{ zeit }}\">
-                        <span style=\"color: red;\"></span>
+                        <span style=\"color: red;\">{{ error_zeit }}</span>
                     </div>
                 </div>
 

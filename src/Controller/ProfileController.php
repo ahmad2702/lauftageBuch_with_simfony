@@ -9,6 +9,10 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProfileController extends Controller
 {
+    private $error_datum = "";
+    private $error_strecke = "";
+    private $error_zeit = "";
+
     private $datum = "";
     private $strecke = "";
     private $zeit = "";
@@ -30,6 +34,8 @@ class ProfileController extends Controller
         return [
                 'lines' => $all, 'profileName' => $name, 'first'=> $first, 'last' => $last,
                 'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
+
+                'error_datum'=>$this->error_datum, 'error_strecke'=>$this->error_strecke, 'error_zeit'=>$this->error_zeit,
 
                 'anzahl'=> sizeof($all), 'now' => $now
             ];

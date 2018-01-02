@@ -100,7 +100,7 @@ class TrackerLine
      */
     public function getZeit()
     {
-        return $this->zeit;
+        return $this->zeit / 60 ;
     }
 
     /**
@@ -108,7 +108,7 @@ class TrackerLine
      */
     public function getSpeed()
     {
-        return ($this->strecke * 1000)/($this->zeit);
+        return ($this->strecke)/($this->zeit / 3600);
     }
 
 

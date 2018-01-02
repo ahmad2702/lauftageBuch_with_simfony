@@ -50,6 +50,18 @@ class AddController extends Controller
                 $this->zeit = "";
             }
 
+            $speed_test = 0;
+            if(is_numeric($this->strecke)!=FALSE and strtotime("1970-01-01 ".$this->zeit) != FALSE){
+                $speed_test = $speed_test + ($this->strecke)/(strtotime("1970-01-01 ".$this->zeit)/3600);
+
+                if($speed_test>40){
+                    $this->error_strecke = "Die Geschwindigkeit darf nicht groesser als 40 km/h sein";
+                    $this->error_zeit = "Die Geschwindigkeit darf nicht groesser als 40 km/h sein";
+                }
+            }
+
+
+
 
         if($this->error_datum=="" and $this->error_strecke == "" and $this->error_zeit == ""){
             //$newData = new TrackerLine($name, new DateTime($this->datum), $this->strecke, strtotime("1970-01-01 ".$this->zeit));
@@ -77,6 +89,8 @@ class AddController extends Controller
             return [
                     'lines' => $all, 'profileName' => $name, 'first'=> $first, 'last' => $last,
                     'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
+
+                    'error_datum'=>$this->error_datum, 'error_strecke'=>$this->error_strecke, 'error_zeit'=>$this->error_zeit,
 
                     'anzahl'=> sizeof($all), 'now' => $now
                 ];
