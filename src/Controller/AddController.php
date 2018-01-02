@@ -10,6 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 //use Symfony\Component\Validator\Constraints\DateTime;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 class AddController extends Controller
 {
@@ -28,14 +29,18 @@ class AddController extends Controller
      */
     public function add(EntityManagerInterface $doctrine, $name, Request $request, ObjectManager $manager) {
 
-        $this->datum = $request->get('datum');
-        $this->strecke = $request->get('strecke');
-        $this->zeit = $request->get('zeit');
+        $current_user = $this->getUser()->getUsername();
+
+        if($current_user == $name){
+
+            $this->datum = $request->get('datum');
+            $this->strecke = $request->get('strecke');
+            $this->zeit = $request->get('zeit');
 
 
-        $this->datum = trim(strip_tags($this->datum));
-        $this->strecke = trim(strip_tags($this->strecke));
-        $this->zeit = trim(strip_tags($this->zeit));
+            $this->datum = trim(strip_tags($this->datum));
+            $this->strecke = trim(strip_tags($this->strecke));
+            $this->zeit = trim(strip_tags($this->zeit));
 
             if(strtotime($this->datum) == FALSE or strtotime($this->datum)>strtotime(date('Y-m-d').' 00:00:00')){
                 $this->error_datum = "Error: Datum leer oder nicht korrekt!";
@@ -63,30 +68,30 @@ class AddController extends Controller
 
 
 
-        if($this->error_datum=="" and $this->error_strecke == "" and $this->error_zeit == ""){
-            //$newData = new TrackerLine($name, new DateTime($this->datum), $this->strecke, strtotime("1970-01-01 ".$this->zeit));
-            $newData = new TrackerLine();
-            $newData->setUsername($name);
-            $newData->setDay(new \DateTime($this->datum));
-            $newData->setStrecke($this->strecke);
-            $newData->setZeit(strtotime("1970-01-01 ".$this->zeit));
+            if($this->error_datum=="" and $this->error_strecke == "" and $this->error_zeit == ""){
+                //$newData = new TrackerLine($name, new DateTime($this->datum), $this->strecke, strtotime("1970-01-01 ".$this->zeit));
+                $newData = new TrackerLine();
+                $newData->setUsername($name);
+                $newData->setDay(new \DateTime($this->datum));
+                $newData->setStrecke($this->strecke);
+                $newData->setZeit(strtotime("1970-01-01 ".$this->zeit));
 
-            $manager->persist($newData);
+                $manager->persist($newData);
 
-            $manager->flush();
+                $manager->flush();
 
-            $all = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => $name], ['day' => 'DESC']);
-            return $this->redirect('/profile-'.$name);
+                $all = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => $name], ['day' => 'DESC']);
+                return $this->redirect('/profile-'.$name);
 
-        }else{
-            $all = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => $name], ['day' => 'DESC']);
+            }else{
+                $all = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => $name], ['day' => 'DESC']);
 
-            $last= $all[0];
-            $first = $all[sizeof($all)-1];
+                $last= $all[0];
+                $first = $all[sizeof($all)-1];
 
-            $now = strtotime(date('Y-m-d').' 00:00:00');
+                $now = strtotime(date('Y-m-d').' 00:00:00');
 
-            return [
+                return [
                     'lines' => $all, 'profileName' => $name, 'first'=> $first, 'last' => $last,
                     'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
 
@@ -94,7 +99,13 @@ class AddController extends Controller
 
                     'anzahl'=> sizeof($all), 'now' => $now
                 ];
+            }
+
+        }else{
+            return $this->redirect('/profile-'.$name);
         }
+
+
 
 
     }
@@ -103,15 +114,20 @@ class AddController extends Controller
     /**
      * @Route("profiler-{name}", name="remove_newData")
      * @Template("profile.php.twig")
+     * @IsGranted("ROLE_USER")
      */
     public function remove(EntityManagerInterface $doctrine, $name, Request $request, ObjectManager $manager) {
 
-        $id = $request->get('id_toRemove');
+        $current_user = $this->getUser()->getUsername();
 
-        $findElement = $doctrine->getRepository('App:TrackerLine')->findOneBy(['id' => $id]);
+        if($current_user == $name){
+            $id = $request->get('id_toRemove');
 
-        $manager->remove($findElement);
-        $manager->flush();
+            $findElement = $doctrine->getRepository('App:TrackerLine')->findOneBy(['id' => $id]);
+
+            $manager->remove($findElement);
+            $manager->flush();
+        }
 
         return $this->redirect('/profile-'.$name);
 

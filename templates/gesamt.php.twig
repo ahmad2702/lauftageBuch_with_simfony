@@ -14,6 +14,7 @@
 
     {% else %}
 
+
         {% set gesamtStrecke_alex=0 %}
         {% set gesamtStrecke_jan=0 %}
         {% set gesamtStrecke_tim=0 %}
@@ -52,7 +53,7 @@
                     {% elseif user.getUsername()=="tim" %}
                         {{ tim|length }}
                     {% endif %}
-
+                    tage
                 </div>
 
                 <div class="trackerZeit">
@@ -64,7 +65,7 @@
                     {% elseif user.getUsername()=="tim" %}
                         {{ gesamtStrecke_tim }}
                     {% endif %}
-
+                    km
                 </div>
 
             </div>

@@ -14,6 +14,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use App\Entity\User;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+
 
 use App\Form\LoginForm;
 
@@ -41,27 +43,12 @@ class SecurityController extends Controller
             )
         );
 
-    /**
-        //Login Form
-        $form = $this->createForm(LoginForm::class, [
-            '_username' => $lastUsername,
-        ]);
-
-        return $this->render(
-            'authentications/login.php.twig',
-            array(
-                'form'          => $form->createView(),
-                'error'         => $error,
-            )
-        );
-    */
-
     }
 
 
     /**
      * @Route("/logout", name="security_logout")
-     *
+     * @IsGranted("ROLE_USER")
      */
     public function logoutAction() {
 

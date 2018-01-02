@@ -58,11 +58,6 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $ret;
         }
 
-        // starta
-        if ('/a' === $pathinfo) {
-            return array (  '_controller' => 'App\\Controller\\DefaultController::indexa',  '_route' => 'starta',);
-        }
-
         // security_login
         if ('/login' === $pathinfo) {
             return array (  '_controller' => 'App\\Controller\\SecurityController::loginAction',  '_route' => 'security_login',);

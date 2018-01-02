@@ -24,29 +24,17 @@ class DefaultController extends Controller
         $user_jan = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'jan']);
         $user_tim = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'tim']);
 
-
+        $current_user = $this->getUser()->getUsername();
 
         return [
                 'lines' => $users,
-                'alex' => $user_alex, 'jan' => $user_jan, 'tim' => $user_tim
+                'alex' => $user_alex, 'jan' => $user_jan, 'tim' => $user_tim,
+
+                'current_user' => $current_user
             ];
     }
 
 
 
-
-
-    /**
-     * @Route("/a", name="starta")
-     * @Template("gesamt.php.twig")
-     */
-    public function indexa(EntityManagerInterface $doctrine) {
-        $all = $doctrine->getRepository('App:TrackerLine')->findBy([], ['day' => 'ASC']);
-
-        $first= $all[0];
-        $last = $all[sizeof($all)-1];
-
-        return ['lines' => $all, 'first' => $first, 'last' => $last];
-    }
 
 }
