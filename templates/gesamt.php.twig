@@ -14,6 +14,24 @@
 
     {% else %}
 
+        {% set gesamtStrecke_alex=0 %}
+        {% set gesamtStrecke_jan=0 %}
+        {% set gesamtStrecke_tim=0 %}
+
+        {% for user in alex %}
+            {% set gesamtStrecke_alex=gesamtStrecke_alex+user.getStrecke() %}
+        {% endfor %}
+
+        {% for user in jan %}
+            {% set gesamtStrecke_jan=gesamtStrecke_jan+user.getStrecke() %}
+        {% endfor %}
+
+        {% for user in tim %}
+            {% set gesamtStrecke_tim=gesamtStrecke_tim+user.getStrecke() %}
+        {% endfor %}
+
+
+
 
         {% for user in lines %}
 
@@ -26,11 +44,27 @@
                 </div>
 
                 <div class="trackerStrecke">
-                    Anzahl der Lauftage
+
+                    {% if user.getUsername()=="alex" %}
+                        {{ alex|length }}
+                    {% elseif user.getUsername()=="jan" %}
+                        {{ jan|length }}
+                    {% elseif user.getUsername()=="tim" %}
+                        {{ tim|length }}
+                    {% endif %}
+
                 </div>
 
                 <div class="trackerZeit">
-                    Gesamte bisher gelaufene Strecke
+
+                    {% if user.getUsername()=="alex" %}
+                        {{ gesamtStrecke_alex }}
+                    {% elseif user.getUsername()=="jan" %}
+                        {{ gesamtStrecke_jan }}
+                    {% elseif user.getUsername()=="tim" %}
+                        {{ gesamtStrecke_tim }}
+                    {% endif %}
+
                 </div>
 
             </div>

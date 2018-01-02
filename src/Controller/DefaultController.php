@@ -20,16 +20,16 @@ class DefaultController extends Controller
     public function index(EntityManagerInterface $doctrine) {
         $users = $doctrine->getRepository('App:User')->findAll();
 
-        $data = $doctrine->getRepository('App:TrackerLine')->findAll();
-
-        foreach ($users as $user){
-
-        }
+        $user_alex = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'alex']);
+        $user_jan = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'jan']);
+        $user_tim = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'tim']);
 
 
 
-
-        return ['lines' => $users];
+        return [
+                'lines' => $users,
+                'alex' => $user_alex, 'jan' => $user_jan, 'tim' => $user_tim
+            ];
     }
 
 

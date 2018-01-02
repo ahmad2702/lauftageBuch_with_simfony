@@ -14,10 +14,16 @@
 
     {% else %}
 
+        {% set gesamtStreckee=0 %}
+
+        {% for i in lines %}
+            {% set gesamtStreckee=gesamtStreckee+i.getStrecke() %}
+        {% endfor %}
+
         <div style="width: 100%; height: 50px; color: blue; text-align: center;">
             Anzahl der Lauftage: {{ anzahl }} <br>
             Gesamttage seit dem ersten Lauftag bis heute: {{ ( (now | date('U')) - (first.getDay() | date('U')) )/86400 }} <br>
-            Gesamte bisher gelaufene Strecke: {{ first.getDay() }}  - {{ now | date }}
+            Gesamte bisher gelaufene Strecke: {{ gesamtStreckee }}
         </div>
 
         {% set gesamtK=0 %}

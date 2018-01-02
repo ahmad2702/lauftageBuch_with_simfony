@@ -23,7 +23,7 @@ class ProfileController extends Controller
         $last= $all[0];
         $first = $all[sizeof($all)-1];
 
-        $gesamtStrecke = $this->getAllStrecke($all);
+
 
         $now = strtotime(date('Y-m-d').' 00:00:00');
 
@@ -31,7 +31,7 @@ class ProfileController extends Controller
                 'lines' => $all, 'profileName' => $name, 'first'=> $first, 'last' => $last,
                 'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
 
-                'anzahl'=> sizeof($all), 'now' => $now, 'gesamtStrecke' => $gesamtStrecke
+                'anzahl'=> sizeof($all), 'now' => $now
             ];
     }
 
@@ -39,8 +39,6 @@ class ProfileController extends Controller
 
 
 
-    public function getAllStrecke($data){
 
-    }
 
 }
