@@ -17,6 +17,9 @@ class ProfileController extends Controller
     private $strecke = "";
     private $zeit = "";
 
+    private $last;
+    private $first;
+
     /**
      * @Route("profile-{name}", name="profile")
      * @Template("profile.php.twig")
@@ -24,21 +27,41 @@ class ProfileController extends Controller
     public function profile(EntityManagerInterface $doctrine, $name) {
         $all = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => $name], ['day' => 'DESC']);
 
-        $last= $all[0];
-        $first = $all[sizeof($all)-1];
+        if(sizeof($all)!=0){
+            $this->last= $all[0];
+            $this->first = $all[sizeof($all)-1];
 
 
-
-        $now = strtotime(date('Y-m-d').' 00:00:00');
-
-        return [
-                'lines' => $all, 'profileName' => $name, 'first'=> $first, 'last' => $last,
+            $now = strtotime(date('Y-m-d').' 00:00:00');
+            return [
+                'lines' => $all, 'profileName' => $name, 'first'=> $this->first, 'last' => $this->last,
                 'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
 
                 'error_datum'=>$this->error_datum, 'error_strecke'=>$this->error_strecke, 'error_zeit'=>$this->error_zeit,
 
+                'profile_error' => "",
+
                 'anzahl'=> sizeof($all), 'now' => $now
             ];
+
+        }else{
+            $now = strtotime(date('Y-m-d').' 00:00:00');
+            return [
+                'lines' => $all, 'profileName' => $name, 'first'=> $this->first, 'last' => $this->last,
+                'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
+
+                'error_datum'=>$this->error_datum, 'error_strecke'=>$this->error_strecke, 'error_zeit'=>$this->error_zeit,
+
+                'profile_error' => "no_found",
+
+                'anzahl'=> sizeof($all), 'now' => $now
+            ];
+        }
+
+
+
+
+
     }
 
 
