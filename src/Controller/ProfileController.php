@@ -25,26 +25,48 @@ class ProfileController extends Controller
      * @Template("profile.php.twig")
      */
     public function profile(EntityManagerInterface $doctrine, $name) {
+        $find_user = $doctrine->getRepository('App:User')->findBy(['username' => $name]);
+
         $all = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => $name], ['day' => 'DESC']);
 
-        if(sizeof($all)!=0){
-            $this->last= $all[0];
-            $this->first = $all[sizeof($all)-1];
+        if(sizeof($find_user)!=0 and sizeof($all)!=0) {
+
+            $this->last = $all[0];
+            $this->first = $all[sizeof($all) - 1];
 
 
-            $now = strtotime(date('Y-m-d').' 00:00:00');
+            $now = strtotime(date('Y-m-d') . ' 00:00:00');
             return [
-                'lines' => $all, 'profileName' => $name, 'first'=> $this->first, 'last' => $this->last,
+                'lines' => $all, 'profileName' => $name, 'first' => $this->first, 'last' => $this->last,
                 'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
 
-                'error_datum'=>$this->error_datum, 'error_strecke'=>$this->error_strecke, 'error_zeit'=>$this->error_zeit,
+                'error_datum' => $this->error_datum, 'error_strecke' => $this->error_strecke, 'error_zeit' => $this->error_zeit,
 
                 'profile_error' => "",
 
-                'anzahl'=> sizeof($all), 'now' => $now
+                'no_data' => "",
+
+                'anzahl' => sizeof($all), 'now' => $now
+            ];
+
+        }elseif(sizeof($find_user)!=0 and sizeof($all)==0){
+
+            $now = strtotime(date('Y-m-d') . ' 00:00:00');
+            return [
+                'lines' => $all, 'profileName' => $name, 'first' => $this->first, 'last' => $this->last,
+                'datum' => $this->datum, 'strecke' => $this->strecke, 'zeit' => $this->zeit,
+
+                'error_datum' => $this->error_datum, 'error_strecke' => $this->error_strecke, 'error_zeit' => $this->error_zeit,
+
+                'profile_error' => "",
+
+                'no_data' => "",
+
+                'anzahl' => sizeof($all), 'now' => $now
             ];
 
         }else{
+
             $now = strtotime(date('Y-m-d').' 00:00:00');
             return [
                 'lines' => $all, 'profileName' => $name, 'first'=> $this->first, 'last' => $this->last,
@@ -54,8 +76,11 @@ class ProfileController extends Controller
 
                 'profile_error' => "no_found",
 
+                'no_data' => "",
+
                 'anzahl'=> sizeof($all), 'now' => $now
             ];
+
         }
 
 
