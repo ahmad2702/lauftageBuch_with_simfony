@@ -42,11 +42,11 @@ class SecurityController extends Controller
         ]);
 
         return $this->render(
-            'authentications/login.php.twig',
+            'authentications/login_explicit.php.twig',
             array(
                 'form' => $form->createView(),
                 'error' => $error,
-                //'username' => $lastUsername,
+                'username' => $lastUsername,
             )
         );
 

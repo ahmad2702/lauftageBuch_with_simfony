@@ -48,22 +48,22 @@ class LoadUserData extends Fixture
 
 
         // user data
-        $eintrag1 = new TrackerLine('alex', new \DateTime('2017-11-11'), 11, 11);
+        $eintrag1 = new TrackerLine('alex', new \DateTime('2017-11-11'), 11, 3600);
         $manager->persist($eintrag1);
 
-        $eintrag2 = new TrackerLine('alex', new \DateTime('2017-11-12'), 22, 22);
+        $eintrag2 = new TrackerLine('alex', new \DateTime('2017-11-12'), 22, 3600);
         $manager->persist($eintrag2);
 
-        $eintrag3 = new TrackerLine('jan', new \DateTime('2017-11-13'), 33, 33);
+        $eintrag3 = new TrackerLine('jan', new \DateTime('2017-11-13'), 33, 3600);
         $manager->persist($eintrag3);
 
-        $eintrag4 = new TrackerLine('jan', new \DateTime('2017-11-14'), 44, 44);
+        $eintrag4 = new TrackerLine('jan', new \DateTime('2017-11-14'), 22, 3600);
         $manager->persist($eintrag4);
 
-        $eintrag5 = new TrackerLine('tim', new \DateTime('2017-11-15'), 55, 55);
+        $eintrag5 = new TrackerLine('tim', new \DateTime('2017-11-15'), 33, 3600);
         $manager->persist($eintrag5);
 
-        $eintrag6 = new TrackerLine('tim', new \DateTime('2017-11-16'), 66, 66);
+        $eintrag6 = new TrackerLine('tim', new \DateTime('2017-11-16'), 11, 3600);
         $manager->persist($eintrag6);
 
 
