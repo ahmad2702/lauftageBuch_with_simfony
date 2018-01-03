@@ -97,6 +97,8 @@ class AddController extends Controller
 
                     'error_datum'=>$this->error_datum, 'error_strecke'=>$this->error_strecke, 'error_zeit'=>$this->error_zeit,
 
+                    'profile_error' => "",
+
                     'anzahl'=> sizeof($all), 'now' => $now
                 ];
             }
@@ -112,7 +114,7 @@ class AddController extends Controller
 
 
     /**
-     * @Route("profiler-{name}", name="remove_newData")
+     * @Route("delete-{name}", name="remove_newData")
      * @Template("profile.php.twig")
      * @IsGranted("ROLE_USER")
      */
@@ -125,8 +127,11 @@ class AddController extends Controller
 
             $findElement = $doctrine->getRepository('App:TrackerLine')->findOneBy(['id' => $id]);
 
-            $manager->remove($findElement);
-            $manager->flush();
+            if($findElement != null){
+                $manager->remove($findElement);
+                $manager->flush();
+            }
+
         }
 
         return $this->redirect('/profile-'.$name);

@@ -420,6 +420,9 @@
       <tag name="form.type"/>
     </service>
     <service id="App\Kernel" class="App\Kernel" public="false" autowire="true" autoconfigure="true"/>
+    <service id="App\Security\ProfileVoter" class="App\Security\ProfileVoter" public="false" autowire="true" autoconfigure="true">
+      <tag name="security.voter"/>
+    </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -717,7 +720,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>xqRHuBu-7n97SDumR9nQOh</argument>
+      <argument>ffEuU0llEAyVquD94W7dqQ</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -727,7 +730,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>xqRHuBu-7n97SDumR9nQOh</argument>
+      <argument>ffEuU0llEAyVquD94W7dqQ</argument>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
@@ -3145,12 +3148,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5a4c0210218fb7.91611191</argument>
+      <argument>5a4d0acc2caf67.49944786</argument>
       <argument type="service" id="logger" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5a4c0210218fb7.91611191</argument>
+      <argument>5a4d0acc2caf67.49944786</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -3641,6 +3644,8 @@
     <service id="abstract.instanceof.App\DataFixtures\LoadUserData" class="App\DataFixtures\LoadUserData" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\LoginForm" class="App\Form\LoginForm" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Form\LoginForm" class="App\Form\LoginForm" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Symfony\Component\Security\Core\Authorization\Voter\VoterInterface.0.App\Security\ProfileVoter" class="App\Security\ProfileVoter" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Security\ProfileVoter" class="App\Security\ProfileVoter" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="service_locator.K2.ETBQ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -3836,6 +3841,7 @@
       <argument type="iterator">
         <argument type="service" id="security.access.authenticated_voter"/>
         <argument type="service" id="security.access.simple_role_voter"/>
+        <argument type="service" id="App\Security\ProfileVoter"/>
       </argument>
       <argument>affirmative</argument>
       <argument>false</argument>
@@ -3914,7 +3920,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>lNgaIewC+g</argument>
       <argument>0</argument>
-      <argument>xqRHuBu-7n97SDumR9nQOh</argument>
+      <argument>ffEuU0llEAyVquD94W7dqQ</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3922,7 +3928,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>CMLAaRm6Ec</argument>
       <argument>0</argument>
-      <argument>xqRHuBu-7n97SDumR9nQOh</argument>
+      <argument>ffEuU0llEAyVquD94W7dqQ</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3930,7 +3936,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>fAr3UAwB0-</argument>
       <argument>0</argument>
-      <argument>xqRHuBu-7n97SDumR9nQOh</argument>
+      <argument>ffEuU0llEAyVquD94W7dqQ</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3938,7 +3944,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>SOnCYCYR3G</argument>
       <argument>0</argument>
-      <argument>xqRHuBu-7n97SDumR9nQOh</argument>
+      <argument>ffEuU0llEAyVquD94W7dqQ</argument>
       <argument>/Users/akhmad.sadullaev/NetBeansProjects/WebEntwickung/aufgabe6/simofony_src/simfony_lauftagebuch/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

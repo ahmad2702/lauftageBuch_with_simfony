@@ -46,7 +46,7 @@ class LoadUserData extends Fixture
         $manager->persist($user4);
 
 
-
+/**
         // user data
         $eintrag1 = new TrackerLine('alex', new \DateTime('2017-11-11'), 11, 3600);
         $manager->persist($eintrag1);
@@ -65,7 +65,7 @@ class LoadUserData extends Fixture
 
         $eintrag6 = new TrackerLine('tim', new \DateTime('2017-11-16'), 11, 3600);
         $manager->persist($eintrag6);
-
+*/
 
 
 

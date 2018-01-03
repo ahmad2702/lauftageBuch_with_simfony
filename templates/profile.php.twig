@@ -120,7 +120,12 @@
                         <div class="trackerRemove">
                             <form method="post" action="{{ path('remove_newData', { name : app.user.username }) }}">
                                 <input type="hidden" value="{{ i.getId() }}" name="id_toRemove">
-                                <input type="submit" value="löschen" name="removeForm">
+
+
+                                {% if is_granted('edit', user) %}
+                                        <input type="submit" value="löschen" name="removeForm">
+                                {% endif %}
+
                             </form>
                         </div>
                     {% endif %}
@@ -174,7 +179,7 @@
                     <!-- Action -->
                     <div class="form-group">
                         <div class="col-md-9 text-right">
-                            <input type="submit" class="btn btn-primary btn-lg" name="addForm" value="ADD"></input>
+                                <input type="submit" class="btn btn-primary btn-lg" name="addForm" value="ADD"></input>
                         </div>
                     </div>
 

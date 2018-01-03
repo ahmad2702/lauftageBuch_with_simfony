@@ -15,27 +15,6 @@
     {% else %}
 
 
-        {% set gesamtStrecke_alex=0 %}
-        {% set gesamtStrecke_jan=0 %}
-        {% set gesamtStrecke_tim=0 %}
-        {% set gesamtStrecke_michael=0 %}
-
-        {% for user in alex %}
-            {% set gesamtStrecke_alex=gesamtStrecke_alex+user.getStrecke() %}
-        {% endfor %}
-
-        {% for user in jan %}
-            {% set gesamtStrecke_jan=gesamtStrecke_jan+user.getStrecke() %}
-        {% endfor %}
-
-        {% for user in tim %}
-            {% set gesamtStrecke_tim=gesamtStrecke_tim+user.getStrecke() %}
-        {% endfor %}
-
-        {% for user in michael %}
-            {% set gesamtStrecke_michael=gesamtStrecke_michael+user.getStrecke() %}
-        {% endfor %}
-
 
         <div class="trackerLine">
 
@@ -59,37 +38,23 @@
             <div class="trackerLine">
 
                 <div class="trackerDatum1">
-                    <a href="{{ path('profile', { name : user.getUsername() }) }}">
+                    <a href="{{ path('profile', { name : user.user }) }}">
                         <br>
-                        {{ user.getUsername() }}
+                        {{ user.user }}
                     </a>
                 </div>
 
                 <div class="trackerStrecke">
 
-                    {% if user.getUsername()=="alex" %}
-                        {{ alex|length }}
-                    {% elseif user.getUsername()=="jan" %}
-                        {{ jan|length }}
-                    {% elseif user.getUsername()=="tim" %}
-                        {{ tim|length }}
-                    {% elseif user.getUsername()=="michael" %}
-                        {{ michael|length }}
-                    {% endif %}
+                    {{ user.totalDates }}
+
                     tage
                 </div>
 
                 <div class="trackerZeit">
 
-                    {% if user.getUsername()=="alex" %}
-                        {{ gesamtStrecke_alex }}
-                    {% elseif user.getUsername()=="jan" %}
-                        {{ gesamtStrecke_jan }}
-                    {% elseif user.getUsername()=="tim" %}
-                        {{ gesamtStrecke_tim }}
-                    {% elseif user.getUsername()=="michael" %}
-                        {{ gesamtStrecke_michael }}
-                    {% endif %}
+                    {{ user.distance }}
+
                     km
                 </div>
 

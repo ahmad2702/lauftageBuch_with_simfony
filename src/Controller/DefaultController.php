@@ -18,23 +18,32 @@ class DefaultController extends Controller
      * @Template("gesamt.php.twig")
      */
     public function index(EntityManagerInterface $doctrine) {
-        $users = $doctrine->getRepository('App:User')->findAll();
 
-        $user_alex = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'alex']);
-        $user_jan = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'jan']);
-        $user_tim = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'tim']);
-        $user_michael = $doctrine->getRepository('App:TrackerLine')->findBy(['username' => 'michael']);
+        $entries = array();
+        $em = $this->getDoctrine()->getManager();
 
-        //$current_user = $this->getUser()->getUsername();
+        $users = $em->getRepository('App\Entity\User')->findAll();
 
-        return [
-                'lines' => $users,
-                'alex' => $user_alex, 'jan' => $user_jan, 'tim' => $user_tim, 'michael' => $user_michael,
+        foreach ($users as $user) {
+            $allUserEntries = $em->getRepository('App\Entity\TrackerLine')
+                ->findBy(['username' =>$user->getUsername()]);
 
-                //'current_user' => $current_user
-            ];
+            $distance = 0;
+            foreach ($allUserEntries as $entry) {
+                $distance += $entry->getStrecke();
+            }
+            $totalDates = count($allUserEntries);
+
+            array_push($entries,array(
+                'user' => $user->getUsername(),
+                'distance' => $distance,
+                'totalDates' => $totalDates));
+        }
+
+
+        return ['lines' => $entries];
+
     }
-
 
 
 
