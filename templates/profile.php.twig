@@ -2,6 +2,8 @@
 
 {% block content %}
 
+
+
     <div class="page-header">
         <h1 style="text-align: center;">Profil von: {{ profileName }} </h1>
     </div>
@@ -122,9 +124,8 @@
                                 <input type="hidden" value="{{ i.getId() }}" name="id_toRemove">
 
 
-                                {% if is_granted('edit', user) %}
                                         <input type="submit" value="löschen" name="removeForm">
-                                {% endif %}
+
 
                             </form>
                         </div>

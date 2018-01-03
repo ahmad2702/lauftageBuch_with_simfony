@@ -46,7 +46,7 @@ class ProfileController extends Controller
 
                 'no_data' => "",
 
-                'user'=> $name,
+                'user_name'=> $find_user,
 
                 'anzahl' => sizeof($all), 'now' => $now
             ];
@@ -64,7 +64,7 @@ class ProfileController extends Controller
 
                 'no_data' => "",
 
-                'user'=> $name,
+                'user_name'=> $find_user,
 
                 'anzahl' => sizeof($all), 'now' => $now
             ];
@@ -82,7 +82,7 @@ class ProfileController extends Controller
 
                 'no_data' => "",
 
-                'user'=> $name,
+                'user_name'=> $find_user,
 
                 'anzahl'=> sizeof($all), 'now' => $now
             ];
