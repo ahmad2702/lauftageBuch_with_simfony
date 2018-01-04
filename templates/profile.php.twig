@@ -2,7 +2,13 @@
 
 {% block content %}
 
+  {#
 
+  Um Vozer zu benutzen, bitte zeile 11 ausklammern und dazu noch die zeilen 127-128 miteinander tauschen
+
+  #}
+
+  {#    {% set can_edit = is_granted('edit', user_name) %}            #}
 
     <div class="page-header">
         <h1 style="text-align: center;">Profil von: {{ profileName }} </h1>
@@ -119,6 +125,7 @@
                     </div>
 
                     {% if is_granted('IS_AUTHENTICATED_FULLY') and profileName == app.user.username %}
+             {#       {% if can_edit %}           mit der obigen Zeile wechseln, um custum-voter zu benutzen  #}
                         <div class="trackerRemove">
                             <form method="post" action="{{ path('remove_newData', { name : app.user.username }) }}">
                                 <input type="hidden" value="{{ i.getId() }}" name="id_toRemove">

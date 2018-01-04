@@ -30,9 +30,19 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
 
+        // start
+        if ('' === $trimmedPathinfo) {
+            $ret = array (  '_controller' => 'App\\Controller\\DefaultController::index',  '_route' => 'start',);
+            if (substr($pathinfo, -1) !== '/') {
+                return array_replace($ret, $this->redirect($rawPathinfo.'/', 'start'));
+            }
+
+            return $ret;
+        }
+
         // add_newData
         if (0 === strpos($pathinfo, '/profil-') && preg_match('#^/profil\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'add_newData')), array (  '_controller' => 'App\\Controller\\AddController::add',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'add_newData')), array (  '_controller' => 'App\\Controller\\EditController::add',));
         }
 
         // profile
@@ -42,17 +52,7 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         // remove_newData
         if (0 === strpos($pathinfo, '/delete-') && preg_match('#^/delete\\-(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'remove_newData')), array (  '_controller' => 'App\\Controller\\AddController::remove',));
-        }
-
-        // start
-        if ('' === $trimmedPathinfo) {
-            $ret = array (  '_controller' => 'App\\Controller\\DefaultController::index',  '_route' => 'start',);
-            if (substr($pathinfo, -1) !== '/') {
-                return array_replace($ret, $this->redirect($rawPathinfo.'/', 'start'));
-            }
-
-            return $ret;
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'remove_newData')), array (  '_controller' => 'App\\Controller\\EditController::remove',));
         }
 
         // security_login
